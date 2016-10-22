@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.openmrs.api.PatientServiceTest" time="7.224" tests="162" errors="0" skipped="1" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_101\jre\bin"/>
+    <property name="java.vm.version" value="25.101-b13"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\amesk\Documents\GitHub\openMRS\openmrs-core"/>
+    <property name="java.runtime.version" value="1.8.0_101-b13"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_101\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\amesk\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\NetBeans 8.1\java\maven-nblib\netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="C:\Program Files\NetBeans 8.1\java\maven\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_101\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\Skype\Phone\;C:\Users\amesk\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\amesk"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="amesk"/>
+    <property name="java.class.path" value="C:\Program Files\NetBeans 8.1\java\maven\boot\plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_101\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=C:\Program Files\NetBeans 8.1\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_101"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_101\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_101\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\NetBeans 8.1\java\maven"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="unvoidPatient_shouldNotUnretireUsers" classname="org.openmrs.api.PatientServiceTest" time="0.059"/>
+  <testcase name="getPatientIdentifierTypeByUuid_shouldReturnNullIfNoObjectFoundWithGivenUuid" classname="org.openmrs.api.PatientServiceTest" time="0.006"/>
+  <testcase name="getPatients_shouldReturnEmptyListIfNameAndIdentifierIsEmpty" classname="org.openmrs.api.PatientServiceTest" time="0.004"/>
+  <testcase name="voidPatient_shouldVoidAllPatientIdentifiersAssociatedWithGivenPatient" classname="org.openmrs.api.PatientServiceTest" time="0.012"/>
+  <testcase name="savePatient_shouldUpdateTheDateChangedAndChangedByOnUpdateOfThePersonAddress" classname="org.openmrs.api.PatientServiceTest" time="0.014"/>
+  <testcase name="getAllPatientIdentifierTypes_shouldFetchAllNonRetiredPatientIdentifierTypes" classname="org.openmrs.api.PatientServiceTest" time="0.002"/>
+  <testcase name="getAllIdentifierValidators_shouldTreatEmptyStringsLikeANullEntry" classname="org.openmrs.api.PatientServiceTest" time="0.002"/>
+  <testcase name="mergePatients_shouldAuditMovedIndependentObservations" classname="org.openmrs.api.PatientServiceTest" time="0.148"/>
+  <testcase name="shouldFetchPersonAttributesForPersonsThatWereFirstFetchedAsPatients" classname="org.openmrs.api.PatientServiceTest" time="0.006"/>
+  <testcase name="getAllPatients_shouldFetchAllNonVoidedPatients" classname="org.openmrs.api.PatientServiceTest" time="0.006"/>
+  <testcase name="mergePatients_shouldOnlyMarkAddressesOfPreferredPatientAsPreferred" classname="org.openmrs.api.PatientServiceTest" time="0.056"/>
+  <testcase name="mergePatients_shouldFailIfNotPreferredPatientHasUnvoidedOrders" classname="org.openmrs.api.PatientServiceTest" time="0.006"/>
+  <testcase name="isIdentifierInUseByAnotherPatient_shouldReturnFalseIfInUseForAnotherLocationAndIdUniquenessIsSetToLocation" classname="org.openmrs.api.PatientServiceTest" time="0.014"/>
+  <testcase name="mergePatients_shouldCopyNonvoidedAddressesToPreferredPatient" classname="org.openmrs.api.PatientServiceTest" time="0.04"/>
+  <testcase name="getPatients_shouldForceSearchStringToBeGreaterThanMinsearchcharactersGlobalProperty" classname="org.openmrs.api.PatientServiceTest" time="0.021"/>
+  <testcase name="shouldAllowGettingPatientsThatWereCreatedByUsersWhoArePatients" classname="org.openmrs.api.PatientServiceTest" time="0.018"/>
+  <testcase name="getPatient_shouldFetchPatientWithGivenPatientId" classname="org.openmrs.api.PatientServiceTest" time="0.004"/>
+  <testcase name="isIdentifierInUseByAnotherPatient_shouldIgnoreVoidedPatientIdentifiers" classname="org.openmrs.api.PatientServiceTest" time="0.013"/>
+  <testcase name="isIdentifierInUseByAnotherPatient_shouldReturnFalseWhenPatientIdentifierDoesNotContainAPatientAndNoPatientHasThisId" classname="org.openmrs.api.PatientServiceTest" time="0.004"/>
+  <testcase name="getAllIdentifierValidators_shouldReturnAllRegisteredIdentifierValidators" classname="org.openmrs.api.PatientServiceTest" time="0.003"/>
+  <testcase name="savePatient_shouldCreateNewPatientFromExistingPersonPlusUserObject" classname="org.openmrs.api.PatientServiceTest" time="0.017"/>
+  <testcase name="getPatientIdentifierTypes_shouldFetchPatientIdentifierTypesThatMatchGivenNameWithGivenFormat" classname="org.openmrs.api.PatientServiceTest" time="0.016"/>
+  <testcase name="isIdentifierInUseByAnotherPatient_shouldReturnTrueWhenPatientIdentifierDoesNotContainAPatientAndAPatientHasThisId" classname="org.openmrs.api.PatientServiceTest" time="0.006"/>
+  <testcase name="savePatient_shouldNotThrowANonUniqueObjectExceptionWhenCalledWithAHandConstructedPatient" classname="org.openmrs.api.PatientServiceTest" time="0.008"/>
+  <testcase name="voidPatientIdentifier_shouldThrowAnAPIExceptionIfTheReasonIsAnEmptyString" classname="org.openmrs.api.PatientServiceTest" time="0.005"/>
+  <testcase name="retirePatientIdentifierType_shouldThrowErrorWhenTryingToRetireAPatientIdentifierTypeWhilePatientIdentifierTypesAreLocked" classname="org.openmrs.api.PatientServiceTest" time="0.007"/>
+  <testcase name="shouldGetPatientsByIdentifier" classname="org.openmrs.api.PatientServiceTest" time="0.052"/>
+  <testcase name="mergePatients_shouldChangeUserRecordsOfNonPreferredPersonToPreferredPerson" classname="org.openmrs.api.PatientServiceTest" time="0.134"/>
+  <testcase name="voidPatient_shouldReturnVoidedPatientWithGivenReason" classname="org.openmrs.api.PatientServiceTest" time="0.016"/>
+  <testcase name="voidPatientIdentifier_shouldVoidGivenPatientIdentifierWithGivenReason" classname="org.openmrs.api.PatientServiceTest" time="0.006"/>
+  <testcase name="purgePatientIdentifier_shouldDeletePatientIdentifierFromDatabase" classname="org.openmrs.api.PatientServiceTest" time="0.003"/>
+  <testcase name="getPatients_shouldAllowSearchStringToBeOneAccordingToMinsearchcharactersGlobalProperty" classname="org.openmrs.api.PatientServiceTest" time="0.107"/>
+  <testcase name="getPatientIdentifierByUuid_shouldFetchPatientIdentifierWithGivenUuid" classname="org.openmrs.api.PatientServiceTest" time="0.008"/>
+  <testcase name="getPatientByExample_shouldNotFetchPatientMatchingAnyOtherPatientInformation" classname="org.openmrs.api.PatientServiceTest" time="0.004"/>
+  <testcase name="savePatientIdentifier_shouldThrowAnAPIExceptionIfThePatientIdentifierStringIsAnEmptyString" classname="org.openmrs.api.PatientServiceTest" time="0.009"/>
+  <testcase name="isIdentifierInUseByAnotherPatient_shouldIgnoreVoidedPatients" classname="org.openmrs.api.PatientServiceTest" time="0.004"/>
+  <testcase name="getPatients_shouldFetchAllPatientsThatPartiallyMatchGivenName" classname="org.openmrs.api.PatientServiceTest" time="0.218"/>
+  <testcase name="getPatientIdentifierTypeByUuid_shouldFetchPatientIdentifierTypeWithGivenUuid" classname="org.openmrs.api.PatientServiceTest" time="0.608"/>
+  <testcase name="getIdentifierValidator_shouldReturnPatientIdentifierValidatorGivenClassName" classname="org.openmrs.api.PatientServiceTest" time="0.002"/>
+  <testcase name="getCountOfPatients_shouldReturnTheRightCountWhenAPatientHasMultipleMatchingPersonNames" classname="org.openmrs.api.PatientServiceTest" time="0.02"/>
+  <testcase name="shouldGetPatientsByIdentifierAndIdentifierType" classname="org.openmrs.api.PatientServiceTest" time="0.225"/>
+  <testcase name="shouldFetchNamesForPersonsThatWereFirstFetchedAsPatients" classname="org.openmrs.api.PatientServiceTest" time="0.412"/>
+  <testcase name="mergePatients_shouldCopyNonvoidedNamesToPreferredPatient" classname="org.openmrs.api.PatientServiceTest" time="0.026"/>
+  <testcase name="unretirePatientIdentifierType_shouldReturnUnretiredPatientIdentifierType" classname="org.openmrs.api.PatientServiceTest" time="0.005"/>
+  <testcase name="getPatientIdentifierTypes_shouldFetchRequiredPatientIdentifierTypesWhenGivenRequiredIsTrue" classname="org.openmrs.api.PatientServiceTest" time="0.005"/>
+  <testcase name="voidPatient_shouldRetireUsers" classname="org.openmrs.api.PatientServiceTest" time="0.032"/>
+  <testcase name="mergePatients_shouldNotCreateDuplicateRelationships" classname="org.openmrs.api.PatientServiceTest" time="0.097"/>
+  <testcase name="isIdentifierInUseByAnotherPatient_shouldReturnTrueIfInUseAndIdTypeUniquenessIsNull" classname="org.openmrs.api.PatientServiceTest" time="0.004"/>
+  <testcase name="mergePatients_shouldMergeAllNonPreferredPatientsInTheTheNotPreferredListToPreferredPatient" classname="org.openmrs.api.PatientServiceTest" time="0.157"/>
+  <testcase name="mergePatients_shouldMaintainSimilarButDifferentAddresses" classname="org.openmrs.api.PatientServiceTest" time="0.044"/>
+  <testcase name="checkPatientIdentifiers_shouldThrowErrorWhenPatientDoesNotHaveOneOrMoreRequiredIdentifiers" classname="org.openmrs.api.PatientServiceTest" time="0.003"/>
+  <testcase name="getPatientIdentifierTypes_shouldOrderAsDefaultComparator" classname="org.openmrs.api.PatientServiceTest" time="0.008"/>
+  <testcase name="savePatientIdentifier_shouldThrowAnAPIExceptionWhenANullArgumentIsPassed" classname="org.openmrs.api.PatientServiceTest" time="0.003"/>
+  <testcase name="savePatientIdentifier_shouldThrowAnAPIExceptionIfThePatientIdentifierStringIsAWhiteSpace" classname="org.openmrs.api.PatientServiceTest" time="0.003"/>
+  <testcase name="getPatients_shouldNotReturnVoidedPatients" classname="org.openmrs.api.PatientServiceTest" time="0.331"/>
+  <testcase name="voidPatientIdentifier_shouldThrowAnAPIExceptionIfTheReasonIsNull" classname="org.openmrs.api.PatientServiceTest" time="0.552"/>
+  <testcase name="getPatient_shouldReturnNullWhenPersonDoesNotExist" classname="org.openmrs.api.PatientServiceTest" time="0.007"/>
+  <testcase name="isIdentifierInUseByAnotherPatient_shouldReturnTrueIfInUseForALocationAndIdTypeUniquenessIsSetToLocation" classname="org.openmrs.api.PatientServiceTest" time="0.003"/>
+  <testcase name="mergePatients_shouldAuditPriorDateOfDeathEstimated" classname="org.openmrs.api.PatientServiceTest" time="0.059"/>
+  <testcase name="purgePatient_shouldDeletePatientFromDatabase" classname="org.openmrs.api.PatientServiceTest" time="0.186"/>
+  <testcase name="voidPatient_shouldVoidGivenPatientWithGivenReason" classname="org.openmrs.api.PatientServiceTest" time="0.619"/>
+  <testcase name="unretirePatientIdentifierType_shouldUnretirePatientIdentifierType" classname="org.openmrs.api.PatientServiceTest" time="0.003"/>
+  <testcase name="getPatientIdentifiers_shouldReturnOnlyNonVoidedPatientsAndPatientIdentifiers" classname="org.openmrs.api.PatientServiceTest" time="0.005"/>
+  <testcase name="getPatientIdentifierTypes_shouldFetchNonRequiredPatientIdentifierTypesWhenGivenRequiredIsFalse" classname="org.openmrs.api.PatientServiceTest" time="0.005"/>
+  <testcase name="checkPatientIdentifiers_shouldThrowErrorWhenPatientHasEmptyPatientIdentifiers" classname="org.openmrs.api.PatientServiceTest" time="0.002"/>
+  <testcase name="isIdentifierInUseByAnotherPatient_shouldReturnFalseWhenPatientIdentifierContainsAPatientAndNoOtherPatientHasThisId" classname="org.openmrs.api.PatientServiceTest" time="0.004"/>
+  <testcase name="getPatientIdentifierType_shouldReturnNullWhenPatientIdentifierIdentifierDoesNotExist" classname="org.openmrs.api.PatientServiceTest" time="0.002"/>
+  <testcase name="unvoidPatient_shouldUnvoidGivenPatient" classname="org.openmrs.api.PatientServiceTest" time="0.023"/>
+  <testcase name="checkPatientIdentifiers_shouldIgnoreVoidedPatientIdentifier" classname="org.openmrs.api.PatientServiceTest" time="0.005"/>
+  <testcase name="unvoidPatient_shouldReturnUnvoidedPatient" classname="org.openmrs.api.PatientServiceTest" time="0.025"/>
+  <testcase name="savePatientIdentifierType_shouldThrowErrorWhenTryingToSaveAPatientIdentifierTypeWhilePatientIdentifierTypesAreLocked" classname="org.openmrs.api.PatientServiceTest" time="0.005"/>
+  <testcase name="savePatientIdentifierType_shouldCreateNewType" classname="org.openmrs.api.PatientServiceTest" time="0.004"/>
+  <testcase name="getPatientByUuid_shouldReturnNullIfNoObjectFoundWithGivenUuid" classname="org.openmrs.api.PatientServiceTest" time="0.006"/>
+  <testcase name="shouldGetPatientsByNameShouldLimitSize" classname="org.openmrs.api.PatientServiceTest" time="0.478"/>
+  <testcase name="getAllPatientIdentifierTypes_shouldFetchPatientIdentifierTypesExcludingRetiredWhenIncludeRetiredIsFalse" classname="org.openmrs.api.PatientServiceTest" time="0.004"/>
+  <testcase name="mergePatients_shouldAuditPriorDateOfBirth" classname="org.openmrs.api.PatientServiceTest" time="0.087"/>
+  <testcase name="mergePatients_shouldAuditPriorDateOfDeath" classname="org.openmrs.api.PatientServiceTest" time="0.072"/>
+  <testcase name="getPatientIdentifierTypes_shouldFetchAnyPatientIdentifierTypesWhenGivenHasCheckDigitIsNull" classname="org.openmrs.api.PatientServiceTest" time="0.007"/>
+  <testcase name="savePatient_shouldSetThePreferredNameAddressAndIdentifierIfNoneIsSpecified" classname="org.openmrs.api.PatientServiceTest" time="0.009"/>
+  <testcase name="getPatient_shouldReturnNullWhenPatientWithGivenPatientIdDoesNotExist" classname="org.openmrs.api.PatientServiceTest" time="0.002"/>
+  <testcase name="getPatientIdentifierByUuid_shouldReturnNullIfNoObjectFoundWithGivenUuid" classname="org.openmrs.api.PatientServiceTest" time="0.002"/>
+  <testcase name="mergePatients_shouldAuditVoidedRelationships" classname="org.openmrs.api.PatientServiceTest" time="0.067"/>
+  <testcase name="mergePatients_shouldNotCopyOverDuplicatePatientIdentifiers" classname="org.openmrs.api.PatientServiceTest" time="0.097"/>
+  <testcase name="getAllPatientIdentifierTypes_shouldFetchPatientIdentifierTypesIncludingRetiredWhenIncludeRetiredIsTrue" classname="org.openmrs.api.PatientServiceTest" time="0.004"/>
+  <testcase name="getPatientByExample_shouldFetchPatientMatchingPatientIdOfGivenPatient" classname="org.openmrs.api.PatientServiceTest" time="0.005"/>
+  <testcase name="checkPatientIdentifiers_shouldRequireOneNonVoidedPatientIdentifier" classname="org.openmrs.api.PatientServiceTest" time="0.003"/>
+  <testcase name="mergePatients_shouldNotVoidRelationshipsForSameTypeAndSideWithDifferentRelatives" classname="org.openmrs.api.PatientServiceTest" time="0.082"/>
+  <testcase name="getPatients_shouldReturnEmptyListWhenNoMatchIsFound" classname="org.openmrs.api.PatientServiceTest" time="0.031"/>
+  <testcase name="getPatientIdentifierTypeByName_shouldReturnNullWhenPatientIdentifierTypeWithGivenNameDoesNotExist" classname="org.openmrs.api.PatientServiceTest" time="0.002"/>
+  <testcase name="getPatientIdentifierTypeByUuid_shouldReturnNullWhenPatientIdentifierTypeWithGivenUuidDoesNotExist" classname="org.openmrs.api.PatientServiceTest" time="0.002"/>
+  <testcase name="mergePatients_shouldCopyNonvoidedIdentifiersToPreferredPatient" classname="org.openmrs.api.PatientServiceTest" time="0.023"/>
+  <testcase name="mergePatients_shouldAuditPriorCauseOfDeath" classname="org.openmrs.api.PatientServiceTest" time="0.061"/>
+  <testcase name="shouldCreatePatient" classname="org.openmrs.api.PatientServiceTest" time="0.021"/>
+  <testcase name="getPatientIdentifierTypeByName_shouldFetchPatientIdentifierTypeThatExactlyMatchesGivenName" classname="org.openmrs.api.PatientServiceTest" time="0.003"/>
+  <testcase name="getPatientIdentifierByUuid_shouldFindObjectGivenValidUuid" classname="org.openmrs.api.PatientServiceTest" time="0.002"/>
+  <testcase name="purgePatientIdentifierType_shouldThrowErrorWhenTryingToDeleteAPatientIdentifierTypeWhilePatientIdentifierTypesAreLocked" classname="org.openmrs.api.PatientServiceTest" time="0.003"/>
+  <testcase name="isIdentifierInUseByAnotherPatient_shouldReturnTrueWhenPatientIdentifierContainsAPatientAndAnotherPatientHasThisId" classname="org.openmrs.api.PatientServiceTest" time="0.003"/>
+  <testcase name="mergePatients_shouldAuditCreatedAttributes" classname="org.openmrs.api.PatientServiceTest" time="0.101"/>
+  <testcase name="mergePatients_shouldNotMergePatientWithItself" classname="org.openmrs.api.PatientServiceTest" time="0.004"/>
+  <testcase name="voidPatient_shouldReturnNullWhenPatientIsNull" classname="org.openmrs.api.PatientServiceTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="mergePatients_shouldAuditCreatedIdentifiers" classname="org.openmrs.api.PatientServiceTest" time="0.067"/>
+  <testcase name="getAllIdentifierValidators_shouldReturnAllRegisteredPatientIdentifierValidators" classname="org.openmrs.api.PatientServiceTest" time="0.004"/>
+  <testcase name="getPatientIdentifier_shouldReturnThePatientsIdentifier" classname="org.openmrs.api.PatientServiceTest" time="0.004"/>
+  <testcase name="checkPatientIdentifiers_shouldThrowErrorWhenPatientHasNullPatientIdentifiers" classname="org.openmrs.api.PatientServiceTest" time="0.004"/>
+  <testcase name="isIdentifierInUseByAnotherPatient_shouldReturnTrueIfInUseAndIdTypeUniquenessIsSetToUnique" classname="org.openmrs.api.PatientServiceTest" time="0.005"/>
+  <testcase name="mergePatients_shouldAuditCreatedNames" classname="org.openmrs.api.PatientServiceTest" time="0.085"/>
+  <testcase name="getPatients_shouldSupportSimpleRegex" classname="org.openmrs.api.PatientServiceTest" time="0.043"/>
+  <testcase name="getPatients_shouldFindAPatientsWithAMatchingIdentifierWithNoDigits" classname="org.openmrs.api.PatientServiceTest" time="0.048"/>
+  <testcase name="getAllPatients_shouldFetchNonVoidedPatientsWhenGivenIncludeVoidedIsFalse" classname="org.openmrs.api.PatientServiceTest" time="0.006"/>
+  <testcase name="getPatient_shouldCreatePatientFromPerson" classname="org.openmrs.api.PatientServiceTest" time="0.01"/>
+  <testcase name="getPatient_shouldReturnNullObjectIfPatientIdDoesntExist" classname="org.openmrs.api.PatientServiceTest" time="0.003"/>
+  <testcase name="shouldFetchAddressesForPersonsThatWereFirstFetchedAsPatients" classname="org.openmrs.api.PatientServiceTest" time="0.004"/>
+  <testcase name="getPatientIdentifierByUuid_shouldReturnNullIfPatientIdentifierNotFoundWithGivenUuid" classname="org.openmrs.api.PatientServiceTest" time="0.003"/>
+  <testcase name="checkPatientIdentifiers_shouldRemoveIdentifierAndThrowErrorWhenPatientHasBlankPatientIdentifier" classname="org.openmrs.api.PatientServiceTest" time="0.003"/>
+  <testcase name="savePatientIdentifier_shouldCreateNewPatientIndentifier" classname="org.openmrs.api.PatientServiceTest" time="0.005"/>
+  <testcase name="savePatient_shouldNotSetAVoidedNameOrAddressOrIdentifierAsPreferred" classname="org.openmrs.api.PatientServiceTest" time="0.008"/>
+  <testcase name="getPatientIdentifierTypeByUuid_shouldFindObjectGivenValidUuid" classname="org.openmrs.api.PatientServiceTest" time="0.003"/>
+  <testcase name="mergePatients_shouldAuditMovedEncounters" classname="org.openmrs.api.PatientServiceTest" time="0.075"/>
+  <testcase name="mergePatients_shouldVoidAllRelationshipsForNonPreferredPatient" classname="org.openmrs.api.PatientServiceTest" time="0.065"/>
+  <testcase name="getAllPatientIdentifierTypes_shouldOrderAsDefaultComparator" classname="org.openmrs.api.PatientServiceTest" time="0.004"/>
+  <testcase name="checkPatientIdentifiers_shouldThrowErrorWhenPatientHasIdenticalIdentifiers" classname="org.openmrs.api.PatientServiceTest" time="0.004"/>
+  <testcase name="savePatient_shouldNotThrowANonUniqueObjectExceptionWhenCalledWithAHandConstructedPatientRegression1375" classname="org.openmrs.api.PatientServiceTest" time="0.006"/>
+  <testcase name="savePatientIdentifier_shouldAllowLocationToBeNullWhenLocationBehaviourIsRequired" classname="org.openmrs.api.PatientServiceTest" time="0.003"/>
+  <testcase name="purgePatientIdentifierType_shouldDeleteTypeFromDatabase" classname="org.openmrs.api.PatientServiceTest" time="0.004"/>
+  <testcase name="mergePatients_shouldAuditPriorDateOfBirthEstimated" classname="org.openmrs.api.PatientServiceTest" time="0.067"/>
+  <testcase name="unretirePatientIdentifierType_shouldThrowErrorWhenTryingToUnretireAPatientIdentifierTypeWhilePatientIdentifierTypesAreLocked" classname="org.openmrs.api.PatientServiceTest" time="0.004"/>
+  <testcase name="savePatientIdentifier_shouldAllowLocationToBeNullWhenLocationBehaviourIsNotUsed" classname="org.openmrs.api.PatientServiceTest" time="0.004"/>
+  <testcase name="savePatient_shouldNotSetThePreferredNameAddressAndIdentifierIfTheyAlreadyExist" classname="org.openmrs.api.PatientServiceTest" time="0.008"/>
+  <testcase name="mergePatients_shouldAuditCreatedPatientPrograms" classname="org.openmrs.api.PatientServiceTest" time="0.065"/>
+  <testcase name="getPatientIdentifierType_shouldFetchPatientIdentifierWithGivenPatientIdentifierTypeId" classname="org.openmrs.api.PatientServiceTest" time="0.003"/>
+  <testcase name="savePatient_shouldFailWhenPatientDoesNotHaveAnyPatientIdentifiers" classname="org.openmrs.api.PatientServiceTest" time="0.004"/>
+  <testcase name="getPatientByUuid_shouldFindObjectGivenValidUuid" classname="org.openmrs.api.PatientServiceTest" time="0.005"/>
+  <testcase name="mergePatients_shouldMergePatientNames" classname="org.openmrs.api.PatientServiceTest" time="0.032"/>
+  <testcase name="unvoidPatient_shouldUnvoidPerson" classname="org.openmrs.api.PatientServiceTest" time="0.025"/>
+  <testcase name="mergePatients_shouldAuditCreatedRelationships" classname="org.openmrs.api.PatientServiceTest" time="0.086"/>
+  <testcase name="mergePatients_shouldMaintainSimilarButDifferentNames" classname="org.openmrs.api.PatientServiceTest" time="0.028"/>
+  <testcase name="voidPatientIdentifier_shouldThrowAnAPIExceptionIfTheReasonIsAWhiteSpaceCharacter" classname="org.openmrs.api.PatientServiceTest" time="0.002"/>
+  <testcase name="mergePatients_shouldMergeVisitsFromNonPreferredToPreferredPatient" classname="org.openmrs.api.PatientServiceTest" time="0.076"/>
+  <testcase name="getPatientIdentifierTypeByName_shouldNotReturnPatientIdentifierTypeThatPartiallyMatchesGivenName" classname="org.openmrs.api.PatientServiceTest" time="0.003"/>
+  <testcase name="savePatient_shouldUpdateAnExistingPatient" classname="org.openmrs.api.PatientServiceTest" time="0.018"/>
+  <testcase name="voidPatient_shouldVoidPerson" classname="org.openmrs.api.PatientServiceTest" time="0.016"/>
+  <testcase name="getPatients_shouldSupportPatternUsingLastDigitAsCheckDigit" classname="org.openmrs.api.PatientServiceTest" time="0.043"/>
+  <testcase name="shouldCreatePatientWithValidatedIdentifier" classname="org.openmrs.api.PatientServiceTest" time="0.022"/>
+  <testcase name="getPatientByUuid_shouldReturnNullIfPatientNotFoundWithGivenUuid" classname="org.openmrs.api.PatientServiceTest" time="0.004"/>
+  <testcase name="savePatientIdentifierType_shouldCreateNewPatientIdentifierType" classname="org.openmrs.api.PatientServiceTest" time="0.004"/>
+  <testcase name="mergePatients_shouldAuditMovedUsers" classname="org.openmrs.api.PatientServiceTest" time="0.084"/>
+  <testcase name="savePatient_shouldNotThrowNonUniqueObjectExceptionWhenCalledWithPersonPromotedToPatient" classname="org.openmrs.api.PatientServiceTest" time="0.006"/>
+  <testcase name="savePatientIdentifierType_shouldUpdateExistingPatientIdentifierType" classname="org.openmrs.api.PatientServiceTest" time="0.004"/>
+  <testcase name="getPatientIdentifierTypes_shouldFetchAnyPatientIdentifierTypesWhenGivenRequiredIsNull" classname="org.openmrs.api.PatientServiceTest" time="0.009"/>
+  <testcase name="getPatients_shouldSearchFamilyName2WithName" classname="org.openmrs.api.PatientServiceTest" time="0.031"/>
+  <testcase name="savePatientIdentifierType_shouldUpdateExistingType" classname="org.openmrs.api.PatientServiceTest" time="0.005"/>
+  <testcase name="savePatientIdentifier_shouldUpdateAnExistingPatientIdentifier" classname="org.openmrs.api.PatientServiceTest" time="0.004"/>
+  <testcase name="mergePatients_shouldVoidNonPreferredPersonObject" classname="org.openmrs.api.PatientServiceTest" time="0.082"/>
+  <testcase name="getAllPatients_shouldFetchVoidedPatientsWhenGivenIncludeVoidedIsTrue" classname="org.openmrs.api.PatientServiceTest" time="0.006"/>
+  <testcase name="getPatientByExample_shouldReturnNullWhenNoPatientMatchesGivenPatientToMatch" classname="org.openmrs.api.PatientServiceTest" time="0.004"/>
+  <testcase name="savePatientIdentifier_shouldThrowAnAPIExceptionWhenOneOfTheRequiredFieldsIsNull" classname="org.openmrs.api.PatientServiceTest" time="0.005"/>
+  <testcase name="processDeath_shouldThrowAPIExceptionIfPatientIsNull" classname="org.openmrs.api.PatientServiceTest" time="0.004"/>
+  <testcase name="mergePatients_shouldNotCopyOverRelationshipsThatAreOnlyBetweenThePreferredAndNotpreferredPatient" classname="org.openmrs.api.PatientServiceTest" time="0.079"/>
+  <testcase name="getCountOfPatients_shouldReturnTheRightCountOfPatientsWithAMatchingIdentifierWithNoDigits" classname="org.openmrs.api.PatientServiceTest" time="0.047"/>
+  <testcase name="mergePatients_shouldAuditCreatedAddresses" classname="org.openmrs.api.PatientServiceTest" time="0.071"/>
+  <testcase name="getPatientByUuid_shouldFetchPatientWithGivenUuid" classname="org.openmrs.api.PatientServiceTest" time="0.004"/>
+  <testcase name="mergePatients_shouldAuditPriorGender" classname="org.openmrs.api.PatientServiceTest" time="0.061"/>
+</testsuite>

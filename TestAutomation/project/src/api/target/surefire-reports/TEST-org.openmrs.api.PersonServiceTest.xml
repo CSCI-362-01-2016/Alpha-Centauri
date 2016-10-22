@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.openmrs.api.PersonServiceTest" time="1.011" tests="119" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_101\jre\bin"/>
+    <property name="java.vm.version" value="25.101-b13"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\amesk\Documents\GitHub\openMRS\openmrs-core"/>
+    <property name="java.runtime.version" value="1.8.0_101-b13"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_101\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\amesk\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\NetBeans 8.1\java\maven-nblib\netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="C:\Program Files\NetBeans 8.1\java\maven\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_101\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\Skype\Phone\;C:\Users\amesk\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\amesk"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="amesk"/>
+    <property name="java.class.path" value="C:\Program Files\NetBeans 8.1\java\maven\boot\plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_101\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=C:\Program Files\NetBeans 8.1\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_101"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_101\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_101\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\NetBeans 8.1\java\maven"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="purgePersonAttributeType_shouldThrowAnErrorWhileTryingToDeletePersonAttributeTypeWhenPersonAttributeTypesAreLocked" classname="org.openmrs.api.PersonServiceTest" time="0.005"/>
+  <testcase name="getSimilarPeople_shouldMatchThreeWordSearchToAnyNamePart" classname="org.openmrs.api.PersonServiceTest" time="0.044"/>
+  <testcase name="getPersonNameById_shouldFindObjectGivenValidId" classname="org.openmrs.api.PersonServiceTest" time="0.004"/>
+  <testcase name="unvoidPerson_shouldUnvoidTheGivenPerson" classname="org.openmrs.api.PersonServiceTest" time="0.018"/>
+  <testcase name="parsePersonName_shouldNotFailWhenEndingWithAComma" classname="org.openmrs.api.PersonServiceTest" time="0.004"/>
+  <testcase name="getPersonByUuid_shouldReturnNullIfNoObjectFoundWithGivenUuid" classname="org.openmrs.api.PersonServiceTest" time="0.007"/>
+  <testcase name="saveRelationshipType_shouldCreateNewObjectWhenRelationshipTypeIdIsNull" classname="org.openmrs.api.PersonServiceTest" time="0.008"/>
+  <testcase name="parsePersonName_shouldNotFailWhenEndingWithWhitespace" classname="org.openmrs.api.PersonServiceTest" time="0.003"/>
+  <testcase name="voidPersonAddress_shouldVoidPersonAddressWithTheGivenReason" classname="org.openmrs.api.PersonServiceTest" time="0.02"/>
+  <testcase name="getPersonNameById_shouldNotFindAnyObjectGivenInvalidId" classname="org.openmrs.api.PersonServiceTest" time="0.003"/>
+  <testcase name="savePersonMergeLog_shouldSetCreatorIfNull" classname="org.openmrs.api.PersonServiceTest" time="0.006"/>
+  <testcase name="getPersonAttributeTypeByUuid_shouldFindObjectGivenValidUuid" classname="org.openmrs.api.PersonServiceTest" time="0.007"/>
+  <testcase name="getSimilarPeople_shouldMatchTwoWordSearchToAnyNamePart" classname="org.openmrs.api.PersonServiceTest" time="0.034"/>
+  <testcase name="savePerson_shouldSetThePreferredNameAndAddressIfNoneIsSpecified" classname="org.openmrs.api.PersonServiceTest" time="0.008"/>
+  <testcase name="getRelationships3_shouldFetchRelationshipsMatchingTheGivenRelType" classname="org.openmrs.api.PersonServiceTest" time="0.009"/>
+  <testcase name="unvoidPerson_shouldUnvoidPatient" classname="org.openmrs.api.PersonServiceTest" time="0.024"/>
+  <testcase name="getAllRelationships_shouldReturnAllRelationshipExcludingVoidedWhenIncludeVoidedEqualsFalse" classname="org.openmrs.api.PersonServiceTest" time="0.008"/>
+  <testcase name="getRelationships2_shouldFetchRelationshipsMatchingTheGivenRelType" classname="org.openmrs.api.PersonServiceTest" time="0.004"/>
+  <testcase name="getAllRelationshipTypes_shouldReturnAllRelationshipTypes" classname="org.openmrs.api.PersonServiceTest" time="0.009"/>
+  <testcase name="getPersonAttributeByUuid_shouldFindObjectGivenValidUuid" classname="org.openmrs.api.PersonServiceTest" time="0.008"/>
+  <testcase name="getRelationshipTypes_shouldReturnEmptyListWhenNoPreferredRelationshipTypeMatchTheGivenName" classname="org.openmrs.api.PersonServiceTest" time="0.003"/>
+  <testcase name="getPersonAttributeByUuid_shouldReturnNullIfNoObjectFoundWithGivenUuid" classname="org.openmrs.api.PersonServiceTest" time="0.003"/>
+  <testcase name="savePerson_shouldUpdateExistingObjectWhenPersonIdIsNotNull" classname="org.openmrs.api.PersonServiceTest" time="0.004"/>
+  <testcase name="getPersonAddressByUuid_shouldReturnNullIfNoObjectFoundWithGivenUuid" classname="org.openmrs.api.PersonServiceTest" time="0.002"/>
+  <testcase name="purgePersonAttributeType_shouldDeletePersonAttributeTypeFromDatabase" classname="org.openmrs.api.PersonServiceTest" time="0.006"/>
+  <testcase name="savePersonAttributeType_shouldThrowAnErrorWhenTryingToSavePersonAttributeTypeWhilePersonAttributeTypesAreLocked" classname="org.openmrs.api.PersonServiceTest" time="0.005"/>
+  <testcase name="getRelationships3_shouldFetchRelationshipsThatWereActiveDuringTheSpecifiedDateRange" classname="org.openmrs.api.PersonServiceTest" time="0.027"/>
+  <testcase name="getPersonMergeLogByUuid_shouldRequireUuid" classname="org.openmrs.api.PersonServiceTest" time="0.002"/>
+  <testcase name="getRelationshipType_shouldReturnRelationshipTypeWithTheGivenRelationshipTypeId" classname="org.openmrs.api.PersonServiceTest" time="0.003"/>
+  <testcase name="purgePerson_shouldDeletePersonFromTheDatabase" classname="org.openmrs.api.PersonServiceTest" time="0.004"/>
+  <testcase name="voidPerson_shouldVoidPatient" classname="org.openmrs.api.PersonServiceTest" time="0.01"/>
+  <testcase name="savePersonMergeLog_shouldRequireWinner" classname="org.openmrs.api.PersonServiceTest" time="0.003"/>
+  <testcase name="getPeople_shouldMatchSearchToFamilyName2" classname="org.openmrs.api.PersonServiceTest" time="0.016"/>
+  <testcase name="getSimilarPeople_shouldAcceptGreaterThanThreeNames" classname="org.openmrs.api.PersonServiceTest" time="0.043"/>
+  <testcase name="getPersonAttributeTypeByUuid_shouldReturnNullIfNoObjectFoundWithGivenUuid" classname="org.openmrs.api.PersonServiceTest" time="0.003"/>
+  <testcase name="getRelationshipByUuid_shouldReturnNullIfNoObjectFoundWithGivenUuid" classname="org.openmrs.api.PersonServiceTest" time="0.007"/>
+  <testcase name="getRelationshipTypeByName_shouldReturnNullWhenNoRelationshipTypeMatchTheGivenName" classname="org.openmrs.api.PersonServiceTest" time="0.004"/>
+  <testcase name="getRelationshipTypeByUuid_shouldFindObjectGivenValidUuid" classname="org.openmrs.api.PersonServiceTest" time="0.007"/>
+  <testcase name="getAllRelationships_shouldReturnAllRelationshipIncludingVoidedWhenIncludeVoidedEqualsTrue" classname="org.openmrs.api.PersonServiceTest" time="0.008"/>
+  <testcase name="getPersonAttributeTypeByName_shouldReturnNullWhenNoPersonAttributeTypeMatchGivenTypeName" classname="org.openmrs.api.PersonServiceTest" time="0.003"/>
+  <testcase name="parsePersonName_shouldParseTwoPersonNameWithoutComma" classname="org.openmrs.api.PersonServiceTest" time="0.002"/>
+  <testcase name="getPersonAttributeTypes_shouldReturnPersonAttributeTypesMatchingGivenParameters" classname="org.openmrs.api.PersonServiceTest" time="0.008"/>
+  <testcase name="getRelationshipsByPerson_shouldFetchUnvoidedRelationshipsOnly" classname="org.openmrs.api.PersonServiceTest" time="0.007"/>
+  <testcase name="getRelationshipsByPerson2_shouldFetchUnvoidedRelationshipsOnly" classname="org.openmrs.api.PersonServiceTest" time="0.007"/>
+  <testcase name="getRelationshipMap_shouldReturnEmptyMapWhenNoRelationshipHasTheMatchingRelationshipType" classname="org.openmrs.api.PersonServiceTest" time="0.006"/>
+  <testcase name="savePersonMergeLog_shouldRequireLoser" classname="org.openmrs.api.PersonServiceTest" time="0.005"/>
+  <testcase name="retirePersonAttributeType_shouldThrowAnErrorWhenTryingToRetirePersonAttributeTypeWhilePersonAttributeTypesAreLocked" classname="org.openmrs.api.PersonServiceTest" time="0.005"/>
+  <testcase name="getPersonAttributeTypes_shouldReturnEmptyListWhenNoPersonAttributeTypesMatchGivenParameters" classname="org.openmrs.api.PersonServiceTest" time="0.008"/>
+  <testcase name="getAllPersonAttributeTypes_shouldReturnAllPersonAttributeTypesExcludingRetiredWhenIncludeRetiredIsFalse" classname="org.openmrs.api.PersonServiceTest" time="0.008"/>
+  <testcase name="getRelationshipsByPerson2_shouldFetchRelationshipsAssociatedWithTheGivenPerson" classname="org.openmrs.api.PersonServiceTest" time="0.004"/>
+  <testcase name="getRelationships3_shouldFetchRelationshipsMatchingTheGivenToPerson" classname="org.openmrs.api.PersonServiceTest" time="0.004"/>
+  <testcase name="getAllPersonMergeLogs_shouldRetrieveAllPersonMergeLogsAndDeserializeThem" classname="org.openmrs.api.PersonServiceTest" time="0.005"/>
+  <testcase name="getAllPersonAttributeTypes_shouldReturnAllPersonAttributeTypesIncludingRetiredWhenIncludeRetiredIsTrue" classname="org.openmrs.api.PersonServiceTest" time="0.006"/>
+  <testcase name="getPersonAttribute_shouldReturnNullWhenGivenIdDoesNotExist" classname="org.openmrs.api.PersonServiceTest" time="0.003"/>
+  <testcase name="getRelationships2_shouldFetchRelationshipsMatchingTheGivenFromPerson" classname="org.openmrs.api.PersonServiceTest" time="0.004"/>
+  <testcase name="savePerson_shouldNotSetAVoidedNameOrAddressAsPreferred" classname="org.openmrs.api.PersonServiceTest" time="0.006"/>
+  <testcase name="savePersonName_shouldFailIfYouTryToVoidTheLastNonVoidedName" classname="org.openmrs.api.PersonServiceTest" time="0.016"/>
+  <testcase name="unvoidPersonName_shouldUnvoidVoidedPersonName" classname="org.openmrs.api.PersonServiceTest" time="0.009"/>
+  <testcase name="getRelationships2_shouldFetchRelationshipsMatchingTheGivenToPerson" classname="org.openmrs.api.PersonServiceTest" time="0.005"/>
+  <testcase name="savePersonMergeLog_shouldRequirePersonMergeLogData" classname="org.openmrs.api.PersonServiceTest" time="0.004"/>
+  <testcase name="getRelationships_shouldFetchRelationshipsMatchingTheGivenToPerson" classname="org.openmrs.api.PersonServiceTest" time="0.005"/>
+  <testcase name="getWinningPersonMergeLogs_shouldRetrievePersonMergeLogsByWinner" classname="org.openmrs.api.PersonServiceTest" time="0.014"/>
+  <testcase name="getPersonAttribute_shouldReturnPersonAttributeWhenGivenIdDoesExist" classname="org.openmrs.api.PersonServiceTest" time="0.003"/>
+  <testcase name="purgeRelationshipType_shouldDeleteRelationshipTypeFromTheDatabase" classname="org.openmrs.api.PersonServiceTest" time="0.004"/>
+  <testcase name="saveRelationshipType_shouldUpdateExistingObjectWhenRelationshipTypeIdIsNotNull" classname="org.openmrs.api.PersonServiceTest" time="0.005"/>
+  <testcase name="voidPerson_shouldReturnVoidedPersonWithGivenReason" classname="org.openmrs.api.PersonServiceTest" time="0.019"/>
+  <testcase name="saveRelationship_shouldCreateNewObjectWhenRelationshipIdIsNull" classname="org.openmrs.api.PersonServiceTest" time="0.006"/>
+  <testcase name="getRelationship_shouldReturnRelationshipWithGivenId" classname="org.openmrs.api.PersonServiceTest" time="0.003"/>
+  <testcase name="getAllRelationships_shouldReturnAllUnvoidedRelationships" classname="org.openmrs.api.PersonServiceTest" time="0.008"/>
+  <testcase name="getPersonNameByUuid_shouldFindObjectGivenValidUuid" classname="org.openmrs.api.PersonServiceTest" time="0.004"/>
+  <testcase name="savePersonAttributeType_shouldSetTheDateChangedAndChangedByOnUpdate" classname="org.openmrs.api.PersonServiceTest" time="0.006"/>
+  <testcase name="savePersonAttributeType_shouldUpdateAnyGlobalPropertyWhichReferenceThisType" classname="org.openmrs.api.PersonServiceTest" time="0.014"/>
+  <testcase name="getRelationshipTypes_shouldReturnEmptyListWhenNoRelationshipTypeMatchTheSearchString" classname="org.openmrs.api.PersonServiceTest" time="0.004"/>
+  <testcase name="getRelationships3_shouldFetchRelationshipsMatchingTheGivenFromPerson" classname="org.openmrs.api.PersonServiceTest" time="0.005"/>
+  <testcase name="getPersonMergeLogByUuid_shouldRetrievePersonMergeLogWithoutDeserializingData" classname="org.openmrs.api.PersonServiceTest" time="0.011"/>
+  <testcase name="getRelationshipsByPerson_shouldOnlyGetUnvoidedRelationshipsRegardlessOfEffectiveDate" classname="org.openmrs.api.PersonServiceTest" time="0.026"/>
+  <testcase name="parsePersonName_shouldParseFourPersonName" classname="org.openmrs.api.PersonServiceTest" time="0.002"/>
+  <testcase name="getRelationshipsByPerson_shouldFetchRelationshipsAssociatedWithTheGivenPerson" classname="org.openmrs.api.PersonServiceTest" time="0.003"/>
+  <testcase name="getSimilarPeople_shouldMatchSearchToFamilyName2" classname="org.openmrs.api.PersonServiceTest" time="0.025"/>
+  <testcase name="getRelationships_shouldFetchRelationshipsMatchingTheGivenFromPerson" classname="org.openmrs.api.PersonServiceTest" time="0.006"/>
+  <testcase name="saveRelationshipType_shouldFailIfTheDescriptionIsNotSpecified" classname="org.openmrs.api.PersonServiceTest" time="0.006"/>
+  <testcase name="getRelationships3_shouldReturnEmptyListWhenNoRelationshipMatchingGivenParametersExist" classname="org.openmrs.api.PersonServiceTest" time="0.006"/>
+  <testcase name="getRelationshipTypes_shouldReturnListOfPreferredRelationshipTypeMatchingGivenName" classname="org.openmrs.api.PersonServiceTest" time="0.006"/>
+  <testcase name="savePersonMergeLog_shouldSerializePersonMergeLogData" classname="org.openmrs.api.PersonServiceTest" time="0.005"/>
+  <testcase name="getRelationshipsByPerson_shouldOnlyGetUnvoidedRelationships" classname="org.openmrs.api.PersonServiceTest" time="0.027"/>
+  <testcase name="unvoidPerson_shouldNotUnretireUsers" classname="org.openmrs.api.PersonServiceTest" time="0.031"/>
+  <testcase name="savePersonMergeLog_shouldSetDateCreatedIfNull" classname="org.openmrs.api.PersonServiceTest" time="0.005"/>
+  <testcase name="voidRelationship_shouldVoidRelationshipWithTheGivenReason" classname="org.openmrs.api.PersonServiceTest" time="0.003"/>
+  <testcase name="getRelationships2_shouldReturnEmptyListWhenNoRelationshipMatchingGivenParametersExist" classname="org.openmrs.api.PersonServiceTest" time="0.004"/>
+  <testcase name="unvoidRelationship_shouldUnvoidVoidedRelationship" classname="org.openmrs.api.PersonServiceTest" time="0.005"/>
+  <testcase name="savePerson_shouldNotSetThePreferredNameAndAddressIfTheyAlreadyExist" classname="org.openmrs.api.PersonServiceTest" time="0.007"/>
+  <testcase name="purgeRelationship_shouldDeleteRelationshipFromTheDatabase" classname="org.openmrs.api.PersonServiceTest" time="0.003"/>
+  <testcase name="getAllPersonAttributeTypes_shouldReturnAllPersonAttributeTypesIncludingRetired" classname="org.openmrs.api.PersonServiceTest" time="0.007"/>
+  <testcase name="getAllPersonMergeLogs_shouldRetrieveAllPersonMergeLogsFromTheModel" classname="org.openmrs.api.PersonServiceTest" time="0.003"/>
+  <testcase name="getRelationshipsByPerson_shouldFetchRelationshipsThatWereActiveDuringEffectiveDate" classname="org.openmrs.api.PersonServiceTest" time="0.023"/>
+  <testcase name="getPersonAddressByUuid_shouldFindObjectGivenValidUuid" classname="org.openmrs.api.PersonServiceTest" time="0.003"/>
+  <testcase name="getPersonAttributeType_shouldReturnNullWhenNoPersonAttributeWithTheGivenIdExist" classname="org.openmrs.api.PersonServiceTest" time="0.003"/>
+  <testcase name="saveRelationship_shouldUpdateExistingObjectWhenRelationshipIdIsNotNull" classname="org.openmrs.api.PersonServiceTest" time="0.006"/>
+  <testcase name="getLosingPersonMergeLog_shouldFindPersonMergeLogByLoser" classname="org.openmrs.api.PersonServiceTest" time="0.015"/>
+  <testcase name="getSimilarPeople_shouldMatchSingleSearchToAnyNamePart" classname="org.openmrs.api.PersonServiceTest" time="0.023"/>
+  <testcase name="getPerson_shouldReturnNullWhenNoPersonHasTheGivenId" classname="org.openmrs.api.PersonServiceTest" time="0.004"/>
+  <testcase name="savePersonMergeLog_shouldSavePersonMergeLog" classname="org.openmrs.api.PersonServiceTest" time="0.005"/>
+  <testcase name="getPersonAttributeTypeByName_shouldReturnPersonAttributeTypeWhenNameMatchesGivenTypeName" classname="org.openmrs.api.PersonServiceTest" time="0.004"/>
+  <testcase name="getPersonMergeLogByUuid_shouldRetrievePersonMergeLogAndDeserializeData" classname="org.openmrs.api.PersonServiceTest" time="0.006"/>
+  <testcase name="savePersonAttributeType_shouldSetTheDateCreatedAndCreatorOnNew" classname="org.openmrs.api.PersonServiceTest" time="0.005"/>
+  <testcase name="voidPerson_shouldRetireUsers" classname="org.openmrs.api.PersonServiceTest" time="0.023"/>
+  <testcase name="parsePersonName_shouldParseTwoPersonNameWithComma" classname="org.openmrs.api.PersonServiceTest" time="0.003"/>
+  <testcase name="unvoidPersonAddress_shouldUnvoidVoidedpersonAddress" classname="org.openmrs.api.PersonServiceTest" time="0.011"/>
+  <testcase name="getRelationships_shouldFetchRelationshipsMatchingTheGivenRelType" classname="org.openmrs.api.PersonServiceTest" time="0.004"/>
+  <testcase name="getPersonByUuid_shouldFindObjectGivenValidUuid" classname="org.openmrs.api.PersonServiceTest" time="0.004"/>
+  <testcase name="unretirePersonAttributeType_shouldThrowAnErrorWhenTryingToUnretirePersonAttributeTypeWhilePersonAttributeTypesAreLocked" classname="org.openmrs.api.PersonServiceTest" time="0.004"/>
+  <testcase name="getRelationshipTypeByUuid_shouldReturnNullIfNoObjectFoundWithGivenUuid" classname="org.openmrs.api.PersonServiceTest" time="0.003"/>
+  <testcase name="getRelationship_shouldReturnNullWhenRelationshipWithGivenIdDoesNotExist" classname="org.openmrs.api.PersonServiceTest" time="0.003"/>
+  <testcase name="getRelationshipByUuid_shouldFindObjectGivenValidUuid" classname="org.openmrs.api.PersonServiceTest" time="0.003"/>
+  <testcase name="getPersonNameByUuid_shouldReturnNullIfNoObjectFoundWithGivenUuid" classname="org.openmrs.api.PersonServiceTest" time="0.003"/>
+  <testcase name="voidPersonName_shouldVoidPersonNameWithTheGivenReason" classname="org.openmrs.api.PersonServiceTest" time="0.01"/>
+  <testcase name="getRelationships2_shouldFetchRelationshipsThatWereActiveDuringEffectiveDate" classname="org.openmrs.api.PersonServiceTest" time="0.027"/>
+  <testcase name="savePerson_shouldCreateNewObjectWhenPersonIdIsNull" classname="org.openmrs.api.PersonServiceTest" time="0.004"/>
+  <testcase name="getRelationshipType_shouldReturnNullWhenNoRelationshipTypeMatchesGivenRelationshipTypeId" classname="org.openmrs.api.PersonServiceTest" time="0.003"/>
+</testsuite>

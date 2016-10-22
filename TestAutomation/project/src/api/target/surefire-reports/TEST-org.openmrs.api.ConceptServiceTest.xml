@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.openmrs.api.ConceptServiceTest" time="167.178" tests="240" errors="0" skipped="1" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_101\jre\bin"/>
+    <property name="java.vm.version" value="25.101-b13"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\amesk\Documents\GitHub\openMRS\openmrs-core"/>
+    <property name="java.runtime.version" value="1.8.0_101-b13"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_101\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\amesk\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\NetBeans 8.1\java\maven-nblib\netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="C:\Program Files\NetBeans 8.1\java\maven\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_101\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\Skype\Phone\;C:\Users\amesk\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\amesk"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="amesk"/>
+    <property name="java.class.path" value="C:\Program Files\NetBeans 8.1\java\maven\boot\plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_101\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=C:\Program Files\NetBeans 8.1\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_101"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_101\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_101\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\NetBeans 8.1\java\maven"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="getConceptSourceByUniqueId_shouldFailIfGivenNull" classname="org.openmrs.api.ConceptServiceTest" time="0.666"/>
+  <testcase name="hasAnyConceptAttribute_shouldReturnTrueIfAnyConceptAttributeIsPresentForGivenConceptAttributeType" classname="org.openmrs.api.ConceptServiceTest" time="1.621"/>
+  <testcase name="getConceptByName_shouldGetConceptByName" classname="org.openmrs.api.ConceptServiceTest" time="1.201"/>
+  <testcase name="getConceptMapTypes_shouldNotIncludeHiddenConceptMapTypesIfIncludeHiddenIsSetToFalse" classname="org.openmrs.api.ConceptServiceTest" time="0.506"/>
+  <testcase name="getDrugByUuid_shouldFindObjectGivenValidUuid" classname="org.openmrs.api.ConceptServiceTest" time="0.544"/>
+  <testcase name="saveConcept_shouldSaveANewConceptNumeric" classname="org.openmrs.api.ConceptServiceTest" time="0.871"/>
+  <testcase name="getConceptByName_shouldFindConceptsWithNamesInMoreSpecificLocales" classname="org.openmrs.api.ConceptServiceTest" time="0.971"/>
+  <testcase name="getConcepts_shouldReturnASearchResultWhoseConceptNameContainsAllWordTokensAsFirst" classname="org.openmrs.api.ConceptServiceTest" time="1.224"/>
+  <testcase name="getDefaultConceptMapType_shouldReturnTypeAsSetInGp" classname="org.openmrs.api.ConceptServiceTest" time="0.425"/>
+  <testcase name="getConceptReferenceTermByName_shouldBeCaseInsensitive" classname="org.openmrs.api.ConceptServiceTest" time="0.456"/>
+  <testcase name="getConceptNameTagByUuid_shouldReturnNullIfNoObjectFoundWithGivenUuid" classname="org.openmrs.api.ConceptServiceTest" time="0.398"/>
+  <testcase name="saveConcept_shouldSaveAConceptNumericAsAConcept" classname="org.openmrs.api.ConceptServiceTest" time="0.825"/>
+  <testcase name="saveConcept_shouldSetAuditInfoIfAnItemIsRemovedFromAnyOfItsChildCollections" classname="org.openmrs.api.ConceptServiceTest" time="0.441"/>
+  <testcase name="getConcepts_shouldReturnConceptSearchResultsThatContainAllSearchWordsAsFirst" classname="org.openmrs.api.ConceptServiceTest" time="0.794"/>
+  <testcase name="getAllConcepts_shouldOrderByConceptIdDescendingWhenSetAscParameterToFalse" classname="org.openmrs.api.ConceptServiceTest" time="0.438"/>
+  <testcase name="getConceptMapTypeByName_shouldReturnAConceptMapTypeMatchingTheSpecifiedName" classname="org.openmrs.api.ConceptServiceTest" time="0.356"/>
+  <testcase name="saveConceptStopWord_shouldSaveConceptStopWordAssignDefaultLocaleIsItNull" classname="org.openmrs.api.ConceptServiceTest" time="0.368"/>
+  <testcase name="conceptIterator_shouldIterateOverAllConcepts" classname="org.openmrs.api.ConceptServiceTest" time="0.557"/>
+  <testcase name="getDefaultConceptMapType_shouldReturnSameAsByDefault" classname="org.openmrs.api.ConceptServiceTest" time="0.48"/>
+  <testcase name="saveConceptSource_shouldNotSetDateCreatedIfOneIsSuppliedAlready" classname="org.openmrs.api.ConceptServiceTest" time="0.467"/>
+  <testcase name="getConceptByName_shouldReturnNullGivenBlankString" classname="org.openmrs.api.ConceptServiceTest" time="0.495"/>
+  <testcase name="getCountOfConceptReferenceTerms_shouldIncludeRetiredTermsIfIncludeRetiredIsSetToTrue" classname="org.openmrs.api.ConceptServiceTest" time="0.354"/>
+  <testcase name="getConceptsByMapping_shouldReturnEmptyListIfNoMappingsExist" classname="org.openmrs.api.ConceptServiceTest" time="0.646"/>
+  <testcase name="getConceptSetByUuid_shouldReturnNullIfNoObjectFoundWithGivenUuid" classname="org.openmrs.api.ConceptServiceTest" time="0.374"/>
+  <testcase name="getConcepts_shouldNotReturnConceptsWithMatchingNamesThatAreVoided" classname="org.openmrs.api.ConceptServiceTest" time="0.432"/>
+  <testcase name="getDrugByMapping_shouldReturnADrugThatMatchesTheCodeAndSource" classname="org.openmrs.api.ConceptServiceTest" time="0.931"/>
+  <testcase name="getDrugs_shouldRejectANullSearchPhrase" classname="org.openmrs.api.ConceptServiceTest" time="0.339"/>
+  <testcase name="mapConceptProposalToConcept_shouldAllowRejectingProposals" classname="org.openmrs.api.ConceptServiceTest" time="0.552"/>
+  <testcase name="saveConcept_shouldSaveNonConceptComplexObjectAsConceptComplex" classname="org.openmrs.api.ConceptServiceTest" time="1.032"/>
+  <testcase name="getFalseConcept_shouldReturnTheFalseConcept" classname="org.openmrs.api.ConceptServiceTest" time="0.638"/>
+  <testcase name="getConcepts_shouldNotFailWithNullClassesAndDatatypes" classname="org.openmrs.api.ConceptServiceTest" time="0.494"/>
+  <testcase name="getConceptSourceByUniqueId_shouldReturnNullIfNoConceptSourceWithGivenUniqueIdIsFound" classname="org.openmrs.api.ConceptServiceTest" time="0.608"/>
+  <testcase name="getConcepts_shouldReturnConceptSearchResultsThatMatchUniqueConcepts" classname="org.openmrs.api.ConceptServiceTest" time="1.465"/>
+  <testcase name="getConceptByMapping_shouldReturnNullIfNoMappingExists" classname="org.openmrs.api.ConceptServiceTest" time="0.687"/>
+  <testcase name="getDrugByMapping_shouldReturnADrugThatMatchesTheCodeAndSourceAndTheBestMapType" classname="org.openmrs.api.ConceptServiceTest" time="1.476"/>
+  <testcase name="getUnknownConcept_shouldReturnTheUnknownConcept" classname="org.openmrs.api.ConceptServiceTest" time="2.434"/>
+  <testcase name="getAllConceptStopWords_shouldReturnEmptyListIfNoRecordFound" classname="org.openmrs.api.ConceptServiceTest" time="0.587"/>
+  <testcase name="getDrugs_shouldGetDrugsLinkedToConceptsWithNamesThatMatchThePhraseAndRelatedLocales" classname="org.openmrs.api.ConceptServiceTest" time="2.589"/>
+  <testcase name="getConceptByMapping_shouldReturnRetiredConceptIfOnlyMatch" classname="org.openmrs.api.ConceptServiceTest" time="0.637"/>
+  <testcase name="saveConceptReferenceTerm_shouldUpdateChangesToTheConceptReferenceTermInTheDatabase" classname="org.openmrs.api.ConceptServiceTest" time="0.543"/>
+  <testcase name="getConcepts_shouldPassWithAndOrNotWords" classname="org.openmrs.api.ConceptServiceTest" time="1.375"/>
+  <testcase name="saveConcept_shouldEnsureThatEveryConcepNameLocaleHasExactlyOnePreferredName" classname="org.openmrs.api.ConceptServiceTest" time="0.938"/>
+  <testcase name="getConceptSourceByName_shouldReturnNullIfNoConceptSourceWithThatNameIsFound" classname="org.openmrs.api.ConceptServiceTest" time="0.69"/>
+  <testcase name="getDrugs_shouldIncludeRetiredDrugsIfIncludeRetiredIsSetToTrue" classname="org.openmrs.api.ConceptServiceTest" time="0.676"/>
+  <testcase name="getConceptReferenceTerms_shouldReturnOnlyUnRetiredConceptReferenceTermsIfIncludeRetiredIsSetToFalse" classname="org.openmrs.api.ConceptServiceTest" time="0.798"/>
+  <testcase name="getDrugsByMapping_shouldReturnRetiredAndNonretiredDrugsIfIncludeRetiredIsSetToTrue" classname="org.openmrs.api.ConceptServiceTest" time="1.189"/>
+  <testcase name="mapConceptProposalToConcept_shouldNotSetValueCodedNameWhenAddConceptIsSelected" classname="org.openmrs.api.ConceptServiceTest" time="0.371"/>
+  <testcase name="saveConcept_shouldNotFailWhenADuplicateNameIsEditedToAUniqueValue" classname="org.openmrs.api.ConceptServiceTest" time="0.943"/>
+  <testcase name="saveConcept_shouldCreateAReferenceTermForAConceptMappingOnTheFlyWhenCreatingAConcept" classname="org.openmrs.api.ConceptServiceTest" time="0.455"/>
+  <testcase name="retireConceptReferenceTerm_shouldRetireTheSpecifiedConceptReferenceTermWithTheGivenRetireReason" classname="org.openmrs.api.ConceptServiceTest" time="0.388"/>
+  <testcase name="getConceptAttributeByUuid_shouldReturnNullIfNoConceptAttributeHasTheGivenUuid" classname="org.openmrs.api.ConceptServiceTest" time="0.708"/>
+  <testcase name="getAllConcepts_shouldOrderByAConceptField" classname="org.openmrs.api.ConceptServiceTest" time="0.339"/>
+  <testcase name="getDrugs_shouldGetDrugsLinkedToConceptsWithNamesThatMatchThePhraseAndLocale" classname="org.openmrs.api.ConceptServiceTest" time="0.839"/>
+  <testcase name="getConceptsByMapping_shouldGetConceptsWithGivenCodeAndSourceName" classname="org.openmrs.api.ConceptServiceTest" time="0.371"/>
+  <testcase name="getDrugsByMapping_shouldMatchOnTheMapTypes" classname="org.openmrs.api.ConceptServiceTest" time="0.777"/>
+  <testcase name="unretireConceptMapType_shouldUnretireTheSpecifiedConceptMapTypeAndDropAllRetireRelatedFields" classname="org.openmrs.api.ConceptServiceTest" time="0.509"/>
+  <testcase name="getConcepts_shouldIncludeRetiredConceptsInTheSearchResults" classname="org.openmrs.api.ConceptServiceTest" time="0.704"/>
+  <testcase name="getConceptStopWords_shouldReturnDefaultLocaleConceptStopWordsIfLocaleIsNull" classname="org.openmrs.api.ConceptServiceTest" time="0.512"/>
+  <testcase name="getCountOfConcepts_shouldReturnACountOfUniqueConcepts" classname="org.openmrs.api.ConceptServiceTest" time="0.685"/>
+  <testcase name="saveConceptSource_shouldNotSetCreatorIfOneIsSuppliedAlready" classname="org.openmrs.api.ConceptServiceTest" time="0.458"/>
+  <testcase name="getDrugByMapping_shouldFailIfSourceIsNull" classname="org.openmrs.api.ConceptServiceTest" time="0.488"/>
+  <testcase name="getConceptByMapping_shouldReturnNullIfSourceCodeDoesNotExist" classname="org.openmrs.api.ConceptServiceTest" time="0.597"/>
+  <testcase name="getDrugsByMapping_shouldExcludeDuplicateMatches" classname="org.openmrs.api.ConceptServiceTest" time="0.943"/>
+  <testcase name="getConceptsByConceptSet_shouldReturnAllConceptsInSet" classname="org.openmrs.api.ConceptServiceTest" time="0.845"/>
+  <testcase name="getConceptByMapping_shouldGetConceptWithGivenCodeAndSourceHl7Code" classname="org.openmrs.api.ConceptServiceTest" time="0.394"/>
+  <testcase name="getConceptsByMapping_shouldReturnRetiredAndNonRetiredConceptsByDefault" classname="org.openmrs.api.ConceptServiceTest" time="0.344"/>
+  <testcase name="getDrugIngredientByUuid_shouldFindObjectGivenValidUuid" classname="org.openmrs.api.ConceptServiceTest" time="0.522"/>
+  <testcase name="getConceptByMapping_shouldNotReturnRetiredConcept" classname="org.openmrs.api.ConceptServiceTest" time="0.406"/>
+  <testcase name="saveConcept_shouldUpdateConceptAlreadyExistingInDatabase" classname="org.openmrs.api.ConceptServiceTest" time="0.807"/>
+  <testcase name="purgeConceptNameTag_shouldDeleteTheSpecifiedConceptNameTagFromTheDatabase" classname="org.openmrs.api.ConceptServiceTest" time="0.746"/>
+  <testcase name="getConceptAnswerByUuid_shouldFindObjectGivenValidUuid" classname="org.openmrs.api.ConceptServiceTest" time="0.566"/>
+  <testcase name="getConceptDatatypeByUuid_shouldReturnNullIfNoObjectFoundWithGivenUuid" classname="org.openmrs.api.ConceptServiceTest" time="0.508"/>
+  <testcase name="getConcepts_shouldReturnPreferredNamesHigher" classname="org.openmrs.api.ConceptServiceTest" time="1.151"/>
+  <testcase name="getConceptStopWords_shouldReturnListOfConceptStopWordsForGivenLocale" classname="org.openmrs.api.ConceptServiceTest" time="0.564"/>
+  <testcase name="getDrugsByMapping_shouldMatchOnTheConceptSource" classname="org.openmrs.api.ConceptServiceTest" time="0.911"/>
+  <testcase name="getCountOfConceptReferenceTerms_shouldNotIncludeRetiredTermsIfIncludeRetiredIsSetToFalse" classname="org.openmrs.api.ConceptServiceTest" time="0.441"/>
+  <testcase name="getConceptSourceByUuid_shouldFindObjectGivenValidUuid" classname="org.openmrs.api.ConceptServiceTest" time="0.523"/>
+  <testcase name="saveConceptReferenceTerm_shouldAddAConceptReferenceTermToTheDatabaseAndAssignAnIdToIt" classname="org.openmrs.api.ConceptServiceTest" time="0.387"/>
+  <testcase name="getConcepts_shouldFindConceptByFullCode" classname="org.openmrs.api.ConceptServiceTest" time="0.38"/>
+  <testcase name="getConceptAttributeType_shouldReturnTheConceptAttributeTypeWithTheGivenId" classname="org.openmrs.api.ConceptServiceTest" time="0.89"/>
+  <testcase name="getConceptAnswerByUuid_shouldReturnNullIfNoObjectFoundWithGivenUuid" classname="org.openmrs.api.ConceptServiceTest" time="0.477"/>
+  <testcase name="getConceptProposalByUuid_shouldReturnNullIfNoObjectFoundWithGivenUuid" classname="org.openmrs.api.ConceptServiceTest" time="0.552"/>
+  <testcase name="saveConcept_shouldNotSetAuditInfoIfTheConceptIsNotEdited" classname="org.openmrs.api.ConceptServiceTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="getDrugs_shouldReturnAllDrugsWithAMatchingTermCodeOrDrugNameOrConceptName" classname="org.openmrs.api.ConceptServiceTest" time="1.054"/>
+  <testcase name="saveConceptNameTag_shouldSaveATagIfItIsSupplied" classname="org.openmrs.api.ConceptServiceTest" time="0.591"/>
+  <testcase name="getConceptByName_shouldGetConceptByPartialName" classname="org.openmrs.api.ConceptServiceTest" time="2.18"/>
+  <testcase name="getConceptReferenceTerms_shouldReturnOnlyTheConceptReferenceTermsFromTheGivenConceptSource" classname="org.openmrs.api.ConceptServiceTest" time="0.557"/>
+  <testcase name="saveConcept_shouldAlwaysReturnAPreferredNameForEveryLocaleThatHasAtleastOneUnvoidedName" classname="org.openmrs.api.ConceptServiceTest" time="0.541"/>
+  <testcase name="getDrugs_shouldGetDrugsLinkedToConceptsWithNamesThatMatchThePhrase" classname="org.openmrs.api.ConceptServiceTest" time="0.656"/>
+  <testcase name="saveConceptStopWord_shouldSaveConceptStopWordIntoDatabase" classname="org.openmrs.api.ConceptServiceTest" time="0.576"/>
+  <testcase name="getDrugs_shouldGetDrugsWithNamesMatchingTheSearchPhrase" classname="org.openmrs.api.ConceptServiceTest" time="0.597"/>
+  <testcase name="getConceptNameByUuid_shouldReturnNullIfNoObjectFoundWithGivenUuid" classname="org.openmrs.api.ConceptServiceTest" time="0.545"/>
+  <testcase name="getConceptSourceByUuid_shouldReturnNullIfNoObjectFoundWithGivenUuid" classname="org.openmrs.api.ConceptServiceTest" time="0.597"/>
+  <testcase name="hasAnyConceptAttribute_shouldReturnFalseIfNoConceptAttributeFoundForGivenConceptAttributeType" classname="org.openmrs.api.ConceptServiceTest" time="1.153"/>
+  <testcase name="getDrugsByIngredient_shouldReturnDrugsMatchedByDrugConcept" classname="org.openmrs.api.ConceptServiceTest" time="0.654"/>
+  <testcase name="getConceptByUuid_shouldReturnNullIfNoObjectFoundWithGivenUuid" classname="org.openmrs.api.ConceptServiceTest" time="0.608"/>
+  <testcase name="getConceptMapTypeByUuid_shouldReturnAConceptMapTypeMatchingTheSpecifiedUuid" classname="org.openmrs.api.ConceptServiceTest" time="0.5"/>
+  <testcase name="getConcept_shouldReturnNullGivenNullParameter" classname="org.openmrs.api.ConceptServiceTest" time="0.673"/>
+  <testcase name="saveConceptSource_shouldSaveAConceptSourceWithANullHl7Code" classname="org.openmrs.api.ConceptServiceTest" time="1.488"/>
+  <testcase name="getConceptMapTypeByName_shouldBeCaseInsensitive" classname="org.openmrs.api.ConceptServiceTest" time="0.597"/>
+  <testcase name="getDrugs_shouldNotFailIfThereisNoDrugByGivenDrugId" classname="org.openmrs.api.ConceptServiceTest" time="0.379"/>
+  <testcase name="getDrugsByIngredient_shouldReturnDrugsMatchedByIntermediateConcept" classname="org.openmrs.api.ConceptServiceTest" time="0.373"/>
+  <testcase name="getDrugs_shouldReturnDrugsThatAreNotRetired" classname="org.openmrs.api.ConceptServiceTest" time="0.39"/>
+  <testcase name="retireConceptAttributeType_shouldRetireAConceptAttributeType" classname="org.openmrs.api.ConceptServiceTest" time="1.34"/>
+  <testcase name="getDrugByMapping_shouldFailIfNoCodeAndConceptSourceAndWithAnyOfTheseTypesAreProvided" classname="org.openmrs.api.ConceptServiceTest" time="0.83"/>
+  <testcase name="unretireConceptAttributeType_shouldUnretireARetiredConceptAttributeType" classname="org.openmrs.api.ConceptServiceTest" time="1.441"/>
+  <testcase name="getConceptDatatypeByName_shouldNotReturnAFuzzyMatchOnName" classname="org.openmrs.api.ConceptServiceTest" time="1.82"/>
+  <testcase name="getConcepts_shouldReturnConceptSearchResultsThatMatchUniqueConceptsEvenIfDifferentMatchingWords" classname="org.openmrs.api.ConceptServiceTest" time="1.039"/>
+  <testcase name="conceptIterator_shouldStartWithTheSmallestConceptId" classname="org.openmrs.api.ConceptServiceTest" time="0.367"/>
+  <testcase name="getConceptMapTypes_shouldReturnOnlyUnRetiredConceptMapTypesIfIncludeRetiredIsSetToFalse" classname="org.openmrs.api.ConceptServiceTest" time="0.41"/>
+  <testcase name="getConcepts_shouldReturnASearchResultForPhraseWithStopWords" classname="org.openmrs.api.ConceptServiceTest" time="0.749"/>
+  <testcase name="changeConceptFromBooleanToCoded_shouldFailIfTheDatatypeOfTheConceptIsNotBoolean" classname="org.openmrs.api.ConceptServiceTest" time="0.448"/>
+  <testcase name="getConceptsByClass_shouldNotFailDueToNoNameInSearch" classname="org.openmrs.api.ConceptServiceTest" time="0.434"/>
+  <testcase name="saveConcept_shouldSetAuditInfoIfAnItemIsAddedToAnyOfItsChildCollections" classname="org.openmrs.api.ConceptServiceTest" time="0.387"/>
+  <testcase name="saveConcept_shouldSetAPreferredNameForEachLocaleIfNoneIsMarked" classname="org.openmrs.api.ConceptServiceTest" time="0.47"/>
+  <testcase name="saveConceptMapType_shouldAddTheSpecifiedConceptMapTypeToTheDatabaseAndAssignToItAnId" classname="org.openmrs.api.ConceptServiceTest" time="0.924"/>
+  <testcase name="getConceptNumericByUuid_shouldFindObjectGivenValidUuid" classname="org.openmrs.api.ConceptServiceTest" time="0.374"/>
+  <testcase name="purgeConceptAttributeType_shouldCompletelyRemoveAConceptAttributeType" classname="org.openmrs.api.ConceptServiceTest" time="0.885"/>
+  <testcase name="getConceptReferenceTerms_shouldReturnUniqueTermsWithACodeOrNameContainingTheSearchPhrase" classname="org.openmrs.api.ConceptServiceTest" time="0.331"/>
+  <testcase name="changeConceptFromBooleanToCoded_shouldExplicitlyAddTrueConceptAsAValue_CodedAnswer" classname="org.openmrs.api.ConceptServiceTest" time="0.39"/>
+  <testcase name="mapConceptProposalToConcept_shouldFailWhenAddingADuplicateSyonymn" classname="org.openmrs.api.ConceptServiceTest" time="0.9"/>
+  <testcase name="saveConcept_shouldGenerateIdForNewConceptIfNoneIsSpecified" classname="org.openmrs.api.ConceptServiceTest" time="0.438"/>
+  <testcase name="purgeConceptMapType_shouldDeleteTheSpecifiedConceptMapTypeFromTheDatabase" classname="org.openmrs.api.ConceptServiceTest" time="0.34"/>
+  <testcase name="changeConceptFromBooleanToCoded_shouldConvertTheDatatypeOfABooleanConceptToCoded" classname="org.openmrs.api.ConceptServiceTest" time="0.411"/>
+  <testcase name="getAllConcepts_shouldOrderByConceptIdAndIncludeRetiredWhenGivenNoParameters" classname="org.openmrs.api.ConceptServiceTest" time="0.463"/>
+  <testcase name="getTrue_shouldReturnTheTrueConcept" classname="org.openmrs.api.ConceptServiceTest" time="0.608"/>
+  <testcase name="saveConcept_shouldAddNewConceptName" classname="org.openmrs.api.ConceptServiceTest" time="0.57"/>
+  <testcase name="getAllConcepts_shouldExcludeRetiredConceptsWhenSetIncludeRetiredToFalse" classname="org.openmrs.api.ConceptServiceTest" time="0.605"/>
+  <testcase name="getConceptByUuid_shouldFindObjectGivenValidUuid" classname="org.openmrs.api.ConceptServiceTest" time="0.628"/>
+  <testcase name="saveConcept_shouldCreateAReferenceTermForAConceptMappingOnTheFlyWhenEditingAConcept" classname="org.openmrs.api.ConceptServiceTest" time="0.622"/>
+  <testcase name="saveConcept_shouldVoidTheConceptNameIfTheTextOfTheNameHasChanged" classname="org.openmrs.api.ConceptServiceTest" time="0.594"/>
+  <testcase name="deleteConceptStopWord_shouldDeleteTheGivenConceptStopWord" classname="org.openmrs.api.ConceptServiceTest" time="0.689"/>
+  <testcase name="retireConceptMapType_shouldShouldSetTheDefaultRetireReasonIfNoneIsGiven" classname="org.openmrs.api.ConceptServiceTest" time="0.52"/>
+  <testcase name="getTrueConcept_shouldReturnTheTrueConcept" classname="org.openmrs.api.ConceptServiceTest" time="0.5"/>
+  <testcase name="getDrugByUuid_shouldReturnNullIfNoObjectFoundWithGivenUuid" classname="org.openmrs.api.ConceptServiceTest" time="0.506"/>
+  <testcase name="shouldFetchDescriptionsForConceptsThatWereFirstFetchedAsNumerics" classname="org.openmrs.api.ConceptServiceTest" time="1.011"/>
+  <testcase name="saveConcept_shouldCreateANewConceptNameWhenTheOldNameIsChanged" classname="org.openmrs.api.ConceptServiceTest" time="0.672"/>
+  <testcase name="saveConcept_shouldKeepIdForNewConceptIfOneIsSpecified" classname="org.openmrs.api.ConceptServiceTest" time="0.783"/>
+  <testcase name="getConceptsByName_shouldReturnConceptsForSpecificCountryAndGlobalLanguageGivenLanguageAndCountryLocale" classname="org.openmrs.api.ConceptServiceTest" time="1.425"/>
+  <testcase name="retireConceptSource_shouldRetireConceptSource" classname="org.openmrs.api.ConceptServiceTest" time="0.511"/>
+  <testcase name="saveConceptAttributeType_shouldCreateANewConceptAttributeType" classname="org.openmrs.api.ConceptServiceTest" time="1.137"/>
+  <testcase name="getFalse_shouldReturnTheFalseConcept" classname="org.openmrs.api.ConceptServiceTest" time="0.683"/>
+  <testcase name="retireConceptReferenceTerm_shouldShouldSetTheDefaultRetireReasonIfNoneIsGiven" classname="org.openmrs.api.ConceptServiceTest" time="0.498"/>
+  <testcase name="getConceptReferenceTermByCode_shouldReturnAConceptReferenceTermThatMatchesTheGivenCodeFromTheGivenSource" classname="org.openmrs.api.ConceptServiceTest" time="0.519"/>
+  <testcase name="getConceptsByConceptSource_shouldReturnEmptyListOfConceptMapsIfNoneFound" classname="org.openmrs.api.ConceptServiceTest" time="0.598"/>
+  <testcase name="getConceptSourceByName_shouldGetConceptSourceWithTheGivenName" classname="org.openmrs.api.ConceptServiceTest" time="0.531"/>
+  <testcase name="changeConceptFromBooleanToCoded_shouldExplicitlyAddFalseConceptAsAValue_CodedAnswer" classname="org.openmrs.api.ConceptServiceTest" time="0.771"/>
+  <testcase name="getConceptSourceByUniqueId_shouldReturnNullIfGivenAnEmptyString" classname="org.openmrs.api.ConceptServiceTest" time="0.569"/>
+  <testcase name="getConceptDatatypeByUuid_shouldFindObjectGivenValidUuid" classname="org.openmrs.api.ConceptServiceTest" time="0.432"/>
+  <testcase name="getConceptNameTagByUuid_shouldFindObjectGivenValidUuid" classname="org.openmrs.api.ConceptServiceTest" time="0.576"/>
+  <testcase name="getDrugs_shouldGetDrugsThatHaveMappingsWithReferenceTermCodesThatMatchThePhrase" classname="org.openmrs.api.ConceptServiceTest" time="1.107"/>
+  <testcase name="saveConceptStopWord_shouldSaveConceptStopWordInUppercase" classname="org.openmrs.api.ConceptServiceTest" time="0.457"/>
+  <testcase name="getConceptAttributeByUuid_shouldGetTheConceptAttributeWithTheGivenUuid" classname="org.openmrs.api.ConceptServiceTest" time="1.153"/>
+  <testcase name="getConceptAttributeTypeByUuid_shouldReturnNullIfNoConceptAttributeTypeExistsWithTheGivenUuid" classname="org.openmrs.api.ConceptServiceTest" time="0.932"/>
+  <testcase name="saveConcept_shouldPassWhenSavingAConceptAfterRemovingAName" classname="org.openmrs.api.ConceptServiceTest" time="1.414"/>
+  <testcase name="getConceptAttributeTypeByUuid_shouldReturnTheConceptAttributeTypeWithTheGivenUuid" classname="org.openmrs.api.ConceptServiceTest" time="1.26"/>
+  <testcase name="getConceptComplex_shouldReturnAConceptComplexObject" classname="org.openmrs.api.ConceptServiceTest" time="1.132"/>
+  <testcase name="getDrugsByMapping_shouldFailIfNoCodeAndConceptSourceAndWithAnyOfTheseTypesAreProvided" classname="org.openmrs.api.ConceptServiceTest" time="0.543"/>
+  <testcase name="getCountOfConcepts_shouldNotFailWithNullClassesAndDatatypes" classname="org.openmrs.api.ConceptServiceTest" time="0.48"/>
+  <testcase name="saveConceptNameTag_shouldNotSaveATagIfItIsInvalid" classname="org.openmrs.api.ConceptServiceTest" time="0.582"/>
+  <testcase name="getConceptsByMapping_shouldReturnEmptyListIfSourceCodeDoesNotExist" classname="org.openmrs.api.ConceptServiceTest" time="0.565"/>
+  <testcase name="saveConceptMapType_shouldUpdateAnExistingConceptMapType" classname="org.openmrs.api.ConceptServiceTest" time="0.565"/>
+  <testcase name="getConceptByMapping_shouldThrowExceptionIfTwoConceptsHaveSameMapping" classname="org.openmrs.api.ConceptServiceTest" time="0.432"/>
+  <testcase name="getDrugsByMapping_shouldReturnEmptyListIfNoMatchesAreFound" classname="org.openmrs.api.ConceptServiceTest" time="1.553"/>
+  <testcase name="saveConceptNameTag_shouldSaveAConceptNameTagIfATagDoesNotExist" classname="org.openmrs.api.ConceptServiceTest" time="0.576"/>
+  <testcase name="getConceptByName_shouldFindConceptsWithNamesInSameSpecificLocale" classname="org.openmrs.api.ConceptServiceTest" time="1.187"/>
+  <testcase name="saveConceptStopWord_shouldSaveReturnConceptStopWordWithId" classname="org.openmrs.api.ConceptServiceTest" time="0.553"/>
+  <testcase name="getConceptDescriptionByUuid_shouldReturnNullIfNoObjectFoundWithGivenUuid" classname="org.openmrs.api.ConceptServiceTest" time="0.555"/>
+  <testcase name="getDrugs_shouldNotReturnDrugsThatAreRetired" classname="org.openmrs.api.ConceptServiceTest" time="0.505"/>
+  <testcase name="getConceptsByConceptSource_shouldReturnAListOfConceptMapsIfConceptMappingsFound" classname="org.openmrs.api.ConceptServiceTest" time="0.621"/>
+  <testcase name="getConceptAttributeType_shouldReturnNullIfNoConceptAttributeTypeExistsWithTheGivenId" classname="org.openmrs.api.ConceptServiceTest" time="1.276"/>
+  <testcase name="getConcepts_shouldExcludeSpecifiedClassesFromTheSearchResults" classname="org.openmrs.api.ConceptServiceTest" time="0.927"/>
+  <testcase name="mapConceptProposalToConcept_shouldSetValueCodedNameWhenAddSynonymIsSelected" classname="org.openmrs.api.ConceptServiceTest" time="0.561"/>
+  <testcase name="unretireConceptReferenceTerm_shouldUnretireTheSpecifiedConceptReferenceTermAndDropAllRetireRelatedFields" classname="org.openmrs.api.ConceptServiceTest" time="0.44"/>
+  <testcase name="getConceptReferenceTermByUuid_shouldReturnTheConceptReferenceTermThatMatchesTheGivenUuid" classname="org.openmrs.api.ConceptServiceTest" time="0.366"/>
+  <testcase name="saveConceptNameTag_shouldSaveAnEditedNameTag" classname="org.openmrs.api.ConceptServiceTest" time="0.32"/>
+  <testcase name="getConceptDescriptionByUuid_shouldFindObjectGivenValidUuid" classname="org.openmrs.api.ConceptServiceTest" time="0.396"/>
+  <testcase name="saveConcept_shouldSaveNonConceptNumericObjectAsConceptNumeric" classname="org.openmrs.api.ConceptServiceTest" time="1.07"/>
+  <testcase name="getDrugsByMapping_shouldGetAListOfAllDrugsThatMatchOnAllTheParameterValues" classname="org.openmrs.api.ConceptServiceTest" time="0.938"/>
+  <testcase name="getDrugsByMapping_shouldFailIfSourceIsNull" classname="org.openmrs.api.ConceptServiceTest" time="0.531"/>
+  <testcase name="saveConcept_shouldSetAuditInfoIfAnyItemInTheChildCollectionsIsEdited" classname="org.openmrs.api.ConceptServiceTest" time="0.578"/>
+  <testcase name="getConceptAttributeTypes_shouldGetConceptAttributeByExactName" classname="org.openmrs.api.ConceptServiceTest" time="1.183"/>
+  <testcase name="getConceptsByMapping_shouldSortNonRetiredConceptsFirst" classname="org.openmrs.api.ConceptServiceTest" time="0.643"/>
+  <testcase name="getConceptNumericByUuid_shouldReturnNullIfNoObjectFoundWithGivenUuid" classname="org.openmrs.api.ConceptServiceTest" time="0.519"/>
+  <testcase name="getConceptsByMapping_shouldGetConceptsWithGivenCodeAndSourceH17Code" classname="org.openmrs.api.ConceptServiceTest" time="0.721"/>
+  <testcase name="retireConceptMapType_shouldRetireTheSpecifiedConceptMapTypeWithTheGivenRetireReason" classname="org.openmrs.api.ConceptServiceTest" time="0.331"/>
+  <testcase name="saveConcept_shouldSaveChangesBetweenConceptNumericAndComplex" classname="org.openmrs.api.ConceptServiceTest" time="0.714"/>
+  <testcase name="getConceptsByMapping_shouldReturnRetiredAndNonRetiredConcepts" classname="org.openmrs.api.ConceptServiceTest" time="0.327"/>
+  <testcase name="getConceptByMapping_shouldGetConceptWithGivenCodeAndSourceName" classname="org.openmrs.api.ConceptServiceTest" time="0.354"/>
+  <testcase name="getDrugIngredientByUuid_shouldReturnNullIfNoObjectFoundWithGivenUuid" classname="org.openmrs.api.ConceptServiceTest" time="0.374"/>
+  <testcase name="saveConcept_shouldCreateNewConceptInDatabase" classname="org.openmrs.api.ConceptServiceTest" time="0.682"/>
+  <testcase name="saveConceptStopWord_shouldFailIfADuplicateConceptStopWordInALocaleIsAdded" classname="org.openmrs.api.ConceptServiceTest" time="0.339"/>
+  <testcase name="getOrderableConcepts_shouldGetOrderableConcepts" classname="org.openmrs.api.ConceptServiceTest" time="0.775"/>
+  <testcase name="getConceptReferenceTermByName_shouldReturnAConceptReferenceTermThatMatchesTheGivenNameFromTheGivenSource" classname="org.openmrs.api.ConceptServiceTest" time="0.369"/>
+  <testcase name="getConcepts_shouldReturnEmptyListIfNoConceptWithinSpecifiedClassesWasFound" classname="org.openmrs.api.ConceptServiceTest" time="0.794"/>
+  <testcase name="saveConceptNameTag_shouldNotSaveAConceptNameTagIfTagExists" classname="org.openmrs.api.ConceptServiceTest" time="0.373"/>
+  <testcase name="getDrugs_shouldReturnDrugsByDrugConceptId" classname="org.openmrs.api.ConceptServiceTest" time="0.453"/>
+  <testcase name="getConceptByMapping_shouldReturnRetiredConceptByDefaultIfOnlyMatch" classname="org.openmrs.api.ConceptServiceTest" time="0.35"/>
+  <testcase name="getDrugs_shouldReturnDrugsByDrugId" classname="org.openmrs.api.ConceptServiceTest" time="0.468"/>
+  <testcase name="getAllConcepts_shouldOrderByAConceptNameField" classname="org.openmrs.api.ConceptServiceTest" time="0.385"/>
+  <testcase name="getConceptClassByUuid_shouldFindObjectGivenValidUuid" classname="org.openmrs.api.ConceptServiceTest" time="0.334"/>
+  <testcase name="saveConceptSource_shouldNotSaveAConceptSourceIfVoidedIsNull" classname="org.openmrs.api.ConceptServiceTest" time="0.428"/>
+  <testcase name="getDrugsByIngredient_shouldReturnEmptyListIfNothingFound" classname="org.openmrs.api.ConceptServiceTest" time="0.509"/>
+  <testcase name="getConceptMapTypes_shouldReturnSortedList" classname="org.openmrs.api.ConceptServiceTest" time="0.521"/>
+  <testcase name="getAllConceptAttributeTypes_shouldReturnAllConceptAttributeTypesIncludingRetiredOnes" classname="org.openmrs.api.ConceptServiceTest" time="1.164"/>
+  <testcase name="getConceptProposalByUuid_shouldFindObjectGivenValidUuid" classname="org.openmrs.api.ConceptServiceTest" time="0.531"/>
+  <testcase name="getConceptStopWords_shouldReturnEmptyListIfNoConceptStopWordsForGivenLocale" classname="org.openmrs.api.ConceptServiceTest" time="0.52"/>
+  <testcase name="getConceptSourceByUniqueId_shouldGetConceptSourceWithTheGivenUniqueId" classname="org.openmrs.api.ConceptServiceTest" time="0.665"/>
+  <testcase name="getAllConceptStopWords_shouldReturnAllConceptStopWords" classname="org.openmrs.api.ConceptServiceTest" time="0.598"/>
+  <testcase name="getAllConceptReferenceTerms_shouldReturnAllConceptReferenceTermsInTheDatabase" classname="org.openmrs.api.ConceptServiceTest" time="0.51"/>
+  <testcase name="getConceptByName_shouldReturnNullGivenNullParameter" classname="org.openmrs.api.ConceptServiceTest" time="0.498"/>
+  <testcase name="getConceptsByName_shouldReturnConceptsForAllCountriesAndGlobalLanguageGivenLanguageOnlyLocale" classname="org.openmrs.api.ConceptServiceTest" time="1.108"/>
+  <testcase name="getConceptByName_shouldFindConceptsWithNamesInMoreGenericLocales" classname="org.openmrs.api.ConceptServiceTest" time="1.266"/>
+  <testcase name="purgeConcept_shouldFailIfAnyOfTheConceptNamesOfTheConceptIsBeingUsedByAnObs" classname="org.openmrs.api.ConceptServiceTest" time="0.525"/>
+  <testcase name="saveConcept_shouldNotUpdateConceptDataTypeIfConceptIsAttachedToAnObservation" classname="org.openmrs.api.ConceptServiceTest" time="1.124"/>
+  <testcase name="getConceptMapTypes_shouldReturnAllTheConceptMapTypesIfIncludeRetiredAndHiddenAreSetToTrue" classname="org.openmrs.api.ConceptServiceTest" time="0.745"/>
+  <testcase name="getConceptByMapping_shouldIgnoreCase" classname="org.openmrs.api.ConceptServiceTest" time="0.576"/>
+  <testcase name="getConceptsByAnswer_shouldFindAnswersForConcept" classname="org.openmrs.api.ConceptServiceTest" time="0.556"/>
+  <testcase name="getActiveConceptMapTypes_shouldReturnAllTheConceptMapTypesExcludingHiddenOnes" classname="org.openmrs.api.ConceptServiceTest" time="0.551"/>
+  <testcase name="getDrugsByMapping_shouldMatchOnTheCode" classname="org.openmrs.api.ConceptServiceTest" time="1.243"/>
+  <testcase name="getConceptNameByUuid_shouldFindObjectGivenValidUuid" classname="org.openmrs.api.ConceptServiceTest" time="0.641"/>
+  <testcase name="getConceptDatatypeByName_shouldReturnAnExactMatchOnName" classname="org.openmrs.api.ConceptServiceTest" time="1.454"/>
+  <testcase name="getConceptSetByUuid_shouldFindObjectGivenValidUuid" classname="org.openmrs.api.ConceptServiceTest" time="0.82"/>
+  <testcase name="getConceptAttributeTypes_shouldSearchConceptAttributesByName" classname="org.openmrs.api.ConceptServiceTest" time="0.899"/>
+  <testcase name="saveConcept_shouldUpdateConceptIfConceptIsAttachedToAnObservationAndItIsANonDatatypeChange" classname="org.openmrs.api.ConceptServiceTest" time="1.106"/>
+  <testcase name="getConceptMappingsToSource_shouldReturnAListOfConceptMapsFromTheGivenSource" classname="org.openmrs.api.ConceptServiceTest" time="0.724"/>
+  <testcase name="getDrugByMapping_shouldFailIfMultipleDrugsAreFoundMatchingTheBestMapType" classname="org.openmrs.api.ConceptServiceTest" time="1.099"/>
+  <testcase name="mapConceptProposalToConcept_shouldNotRequireMappedConceptOnRejectAction" classname="org.openmrs.api.ConceptServiceTest" time="0.653"/>
+  <testcase name="shouldFetchNamesForConceptsThatWereFirstFetchedAsNumerics" classname="org.openmrs.api.ConceptServiceTest" time="0.487"/>
+  <testcase name="getConceptReferenceTerms_shouldReturnAllTheConceptReferenceTermsIfIncludeRetiredIsSetToTrue" classname="org.openmrs.api.ConceptServiceTest" time="0.598"/>
+  <testcase name="saveConcept_shouldReuseConceptNameTagsThatAlreadyExistInTheDatabase" classname="org.openmrs.api.ConceptServiceTest" time="1.137"/>
+  <testcase name="getTrueConcept_shouldReturnProperTrueConcept" classname="org.openmrs.api.ConceptServiceTest" time="0.538"/>
+  <testcase name="getFalseConcept_shouldReturnProperFalseConcept" classname="org.openmrs.api.ConceptServiceTest" time="0.421"/>
+  <testcase name="getDrugByMapping_shouldReturnNullIfNoMatchFound" classname="org.openmrs.api.ConceptServiceTest" time="0.866"/>
+  <testcase name="saveConcept_shouldNotAcceptALocaleThatIsNeitherAmongTheLocaleAllowedListNorADefaultLocale" classname="org.openmrs.api.ConceptServiceTest" time="0.521"/>
+  <testcase name="getConceptsByMapping_shouldOnlyReturnNonRetiredConcepts" classname="org.openmrs.api.ConceptServiceTest" time="0.507"/>
+  <testcase name="getReferenceTermMappingsTo_shouldReturnAllConceptReferenceTermMapsWhereTheSpecifiedTermIsTheTermB" classname="org.openmrs.api.ConceptServiceTest" time="0.42"/>
+  <testcase name="getConcepts_shouldReturnConceptsWithSpecifiedClasses" classname="org.openmrs.api.ConceptServiceTest" time="0.938"/>
+  <testcase name="getDrugs_shouldReturnUniqueDrugs" classname="org.openmrs.api.ConceptServiceTest" time="0.535"/>
+  <testcase name="getConceptClassByUuid_shouldReturnNullIfNoObjectFoundWithGivenUuid" classname="org.openmrs.api.ConceptServiceTest" time="0.566"/>
+</testsuite>
