@@ -1,6 +1,6 @@
 Test1
 MRS-1: The form shall require the patient to have a first and last name. Validated by: testName()
-class PersonName.java
+PersonName.java
 getGivenName()
-String givenName,
-boolean true
+givenName,
+true
