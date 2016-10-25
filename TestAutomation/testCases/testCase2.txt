@@ -2,5 +2,5 @@ Test02
 MRS-2: The form shall require the patient to enter a valid age. Validated by: testAge()
 Person.java
 getBirthDate()
-birthdate,
+birthdate
 true
