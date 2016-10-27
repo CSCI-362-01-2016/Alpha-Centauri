@@ -1,2 +1,6 @@
 07
-MRS-7:
+MRS-7: The method shall return null.
+ProgramWorkflow.java
+getStateByName(String name)
+" "
+Null
