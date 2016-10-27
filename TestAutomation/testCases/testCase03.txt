@@ -1,0 +1,6 @@
+Test 03
+MRS-3: The form shall require the patient to fill out a valid gender. 
+Person.java
+setGender() getGender()
+Male
+Male

@@ -1,0 +1,6 @@
+Test 02
+MRS-2: The form shall require the patient to enter a valid age.
+Person.java
+setBirthDate() getBirthDate()
+04-11-1995
+04-11-1995
