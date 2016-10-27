@@ -1,6 +1,6 @@
-Test03
+Test 03
 MRS-3: The form shall require the patient to fill out a valid gender. 
-class Person.java
-getGender()
-test input(s) including command-line argument(s
-boolean true
+Person.java
+setGender() getGender()
+Male
+Male
