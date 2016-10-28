@@ -1,4 +1,4 @@
-Test 04
+04
 MRS-4: The form shall require the patient to enter a valid date. 
 FieldAnswer.java
 setDateCreated() getDateCreated()
