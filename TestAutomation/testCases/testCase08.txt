@@ -1,2 +1,6 @@
 08
-MRS-8: 
+MRS-8: Tests that an allergy has been added
+Allergies.java
+add(Allergy allergy)
+input (an allergy)
+output

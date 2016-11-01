@@ -1,2 +1,6 @@
 14
-MRS-14:
+MRS-14: Will return True when the allergies list is empty
+Allergies.java
+isEmpty()
+void
+True

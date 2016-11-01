@@ -1,2 +1,6 @@
 09
-MRS-9:
+MRS-9: Removes an allergy from the end of the list
+Allergies.java
+remove(Allergy allergy)
+input 
+output
