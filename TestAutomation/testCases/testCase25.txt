@@ -1,2 +1,6 @@
 25
-MRS-25:
+MRS-25: The method shall return "" if userID equals null.
+User.java
+serialize()
+
+""

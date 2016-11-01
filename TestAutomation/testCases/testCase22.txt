@@ -1,2 +1,6 @@
 22
 MRS-22:
+VisitType.java
+VisitType(Integer visitTypeId), getVisitTypeID()
+13
+13
