@@ -24,7 +24,7 @@ import org.openmrs.util.OpenmrsConstants;
 import org.openmrs.util.OpenmrsUtil;
 import org.springframework.util.StringUtils;
 
-public class DriverTest {
+public class PersonNameDriverTest {
 	
 	public static void main(String[] args) {
 		
