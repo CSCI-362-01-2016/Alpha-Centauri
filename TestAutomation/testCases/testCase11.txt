@@ -2,5 +2,7 @@
 MRS-11: Checks to see if the allergies list contains the specified object
 Allergies.java
 contains(Object o)
-pollen
+POLLEN
 true
+.:./project/src/api/target/classes:./project/src/api/target/classes/org/openmrs/Allergies.class:./project/src/api/target/classes/org/openmrs/Allergy.class:./project/src/api/target/classes/org/openmrs/Allergen.class:./project/src/api/target/classes/org/openmrs/AllergenType.class:./project/src/lib/spring-context-4.1.4.RELEASE.jar:./project/src/lib/log4j-1.2.15.jar
+TestCase11
