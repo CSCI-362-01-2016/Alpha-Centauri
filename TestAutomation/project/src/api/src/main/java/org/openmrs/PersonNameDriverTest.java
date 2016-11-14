@@ -19,6 +19,6 @@ public class PersonNameDriverTest {
 		//}
 		testPN.setGivenName(args[0]);
 		System.out.println(testPN.getGivenName());
-		
 	}
+	
 }
