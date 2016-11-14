@@ -1,2 +1,6 @@
 20
 MRS-20:
+RelationshipType.java
+setWeight(Integer weight), getWeight()
+120
+120
