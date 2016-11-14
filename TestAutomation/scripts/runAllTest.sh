@@ -18,16 +18,17 @@ echo  "<th> class name </th>">> ../reports/htmlTemplate.html
 echo  "<th> method name </th>">> ../reports/htmlTemplate.html
 echo  "<th> input </th>">> ../reports/htmlTemplate.html
 echo  "<th> output </th>">> ../reports/htmlTemplate.html
-echo  "<th> expected output </th></tr>">> ../reports/htmlTemplate.html
+echo  "<th> expected output </th>" >> ../reports/htmlTemplate.html
+echo  "<th> pass/fail </th></tr>">> ../reports/htmlTemplate.html
 
-lineStorage=( )
-for filename in *
+lineStorage=( ) #array for storing lines from test case files
+for filename in * #goes through all the files in testCase dir
 do
 echo "<tr>" >> ../reports/htmlTemplate.html
    counter=0
-	while IFS='' read -r line;do
+	while IFS='' read -r line;do #reads lines from a test Case file
 	   lineStorage[$counter]="$line"
-	  if [ "$counter" -eq 0 ] || [ "$counter" -eq 3 ] || [ "$counter" -eq 5 ]
+	  if [ "$counter" -eq 0 ] || [ "$counter" -eq 2 ] || [ "$counter" -eq 3 ] || [ "$counter" -eq 4 ] 
 	   then
 		echo "<td>" >> ../reports/htmlTemplate.html
 		echo ${lineStorage[$counter]} >> ../reports/htmlTemplate.html
@@ -36,9 +37,16 @@ echo "<tr>" >> ../reports/htmlTemplate.html
 	        echo "</td>" >> ../reports/htmlTemplate.html
 	done < "$filename"
 
-echo "</tr>" >> ../reports/htmlTemplate.html
+#this is where i think to do driver call
+cd ..
+java -classpath
+
+
+
+
+echo "</tr>" >> ../reports/htmlTemplate.html #ends a row in the table
 
 done
 
-cd ../reports
-xdg-open htmlTemplate.html
+cd ../reports #goes to report dir
+xdg-open htmlTemplate.html #opens the html file
