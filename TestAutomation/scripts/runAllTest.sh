@@ -22,7 +22,7 @@ echo  "<th> expected output </th>" >> ../reports/htmlTemplate.html
 echo  "<th> pass/fail </th></tr>">> ../reports/htmlTemplate.html
 
 lineStorage=( ) #array for storing lines from test case files
-for filename in * #goes through all the files in testCase dir
+for filename in *    #goes through all the files in testCase dir
 do
 echo "<tr>" >> ../reports/htmlTemplate.html
    counter=0
@@ -38,14 +38,18 @@ echo "<tr>" >> ../reports/htmlTemplate.html
 	done < "$filename"
 
 #this is where i think to do driver call
+#cd ../project/src/api/target/classes
 cd ..
-java -classpath
+
+output=$(echo ${lingStorage[$counter]} | java -classpath ${lineStorage[6]} org.openmrs.PersonNameDriverTest Nick)
+pwd
+echo "<td>" >> reports/htmlTemplate.html
+echo $output >> reports/htmlTemplate.html
+echo "</td>" >> reports/htmlTemplate.html
 
 
-
-
-echo "</tr>" >> ../reports/htmlTemplate.html #ends a row in the table
-
+echo "</tr>" >> reports/htmlTemplate.html #ends a row in the table
+cd testCases
 done
 
 cd ../reports #goes to report dir
