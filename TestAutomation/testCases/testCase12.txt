@@ -2,5 +2,7 @@
 MRS-12: Gives the index of the allergy in the allergies list
 Allergies.java
 indexOf(Object o)
-Pollen
 0
+0
+.:./project/src/api/target/classes:./project/src/api/target/classes/org/openmrs/Allergies.class:./project/src/api/target/classes/org/openmrs/Allergy.class
+TestCase12
