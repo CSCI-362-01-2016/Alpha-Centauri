@@ -1,2 +1,7 @@
 21
-MRS-21:
+MRS-21: 
+Person.java
+setDead(Boolean dead), getDead()
+true
+true
+
