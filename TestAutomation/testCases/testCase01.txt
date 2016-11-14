@@ -4,4 +4,4 @@ PersonName.java
 setGivenName() getGivenName()
 Nick
 Nick
-.:./project/src/api/target/classes:./project/src/api/target/classes/org/openmrs/PersonName.class:./project/src/api/target/classes/lib/commons-logging-1.2.jar:./project/src/api/target/classes/lib/commons-io-1.4.jar
+.:./project/src/api/target/classes:./project/src/api/target/classes/org/openmrs/PersonName.class:./project/src/api/target/lib/commons-logging-1.2.jar:./project/src/api/target/lib/commons-io-1.4.jar
