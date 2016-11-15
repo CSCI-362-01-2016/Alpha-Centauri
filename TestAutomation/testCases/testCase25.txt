@@ -3,6 +3,6 @@ MRS-25: The method shall return "" if userID equals null.
 User.java
 serialize()
 
-""
+
 .:./project/src/api/target/classes:./project/src/api/target/classes/org/openmrs/User.class:./project/src/lib/commons-logging-1.2.jar
 TestCase25

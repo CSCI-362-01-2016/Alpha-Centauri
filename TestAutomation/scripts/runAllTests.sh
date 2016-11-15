@@ -50,7 +50,7 @@ echo "<tr>" >> ../reports/htmlTemplate.html
 cd ..
 
 #pipes input into java driver classes and puts them in html table
-output=$(echo ${lineStorage[4]} | java -classpath ${lineStorage[6]} org.openmrs.${lineStorage[7]})
+output=$(echo ${lineStorage[4]} | java -classpath ${lineStorage[6]} org.openmrs.${lineStorage[7]} ${lineStorage[4]})
 echo "<td>" >> reports/htmlTemplate.html
 echo $output >> reports/htmlTemplate.html
 echo "</td>" >> reports/htmlTemplate.html
