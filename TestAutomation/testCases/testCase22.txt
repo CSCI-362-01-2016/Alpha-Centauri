@@ -1,6 +1,7 @@
 22
 MRS-22:
 VisitType.java
-VisitType(Integer visitTypeId), getVisitTypeID()
+setVisitTypeId(Integer visitTypeId), getVisitTypeID()
 13
 13
+.:./project/src/api/target/classes:./project/src/api/target/classes/org/openmrs/VisitType.class
