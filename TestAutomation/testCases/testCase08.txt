@@ -4,5 +4,5 @@ Allergies.java
 add(Allergy allergy)
 
 true
-.:./project/src/api/target/classes:./project/src/api/target/classes/org/openmrs/Allergies.class:./project/src/api/target/classes/org/openmrs/Allergy.class:./project/src/lib/spring-context-4.1.4.RELEASE.jar:./project/src/lib/log4j-1.2.15.jar:./openmrs-core/lib/commons-logging-1.2.jar
+.:./project/src/api/target/classes:./project/src/api/target/classes/org/openmrs/Allergies.class:./project/src/api/target/classes/org/openmrs/Allergy.class:./project/src/lib/spring-context-4.1.4.RELEASE.jar:./project/src/lib/log4j-1.2.15.jar:./project/src/lib/commons-logging-1.2.jar
 TestCase08
