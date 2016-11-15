@@ -1,2 +1,6 @@
 16
-MRS-16:
+MRS-16: The care setting ID shall be updated to the ID entered.
+CareSetting.java
+setCareSettingId(Integer careSettingId), getCareSettingId()
+100
+100
