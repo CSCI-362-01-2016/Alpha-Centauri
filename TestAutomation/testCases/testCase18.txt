@@ -1,2 +1,6 @@
 18
 MRS-18:
+PatientIdentifierType.java
+setPatientIdentifierTypeId(Integer patientIdentifierTypeId), getPatientIdentifierTypeId()
+11113
+11113
