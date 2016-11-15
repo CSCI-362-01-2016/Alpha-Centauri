@@ -4,3 +4,5 @@ PatientIdentifierType.java
 setPatientIdentifierTypeId(Integer patientIdentifierTypeId), getPatientIdentifierTypeId()
 11113
 11113
+.:./project/src/api/target/classes:./project/src/api/target/classes/org/openmrs/PatientIdentifierType.class
+TestCase18
