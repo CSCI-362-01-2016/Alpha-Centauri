@@ -1,2 +1,6 @@
 19
-MRS-19: 
+MRS-19: The method shall return the text given.
+PatientIdentifierType.java
+setFormat(String format), getFormat()
+example format
+example format
