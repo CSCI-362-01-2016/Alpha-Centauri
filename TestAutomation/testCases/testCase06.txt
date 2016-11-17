@@ -5,4 +5,4 @@ getState(Integer programWorkflowStateID)
 -3
 null
 .:./project/src/api/target/classes:./project/src/api/target/classes/org/openmrs/ProgamWorkflow.class:./project/src/lib/commons-logging-1.2.jar
-TestCase06
+org.openmrs.TestCase06
