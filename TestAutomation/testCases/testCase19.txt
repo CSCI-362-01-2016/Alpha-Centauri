@@ -5,4 +5,4 @@ setFormat(String format), getFormat()
 example format
 example format
 .:./project/src/api/target/classes:./project/src/api/target/classes/org/openmrs/PatientIdentifierType.class
-TestCase19
+org.openmrs.TestCase19
