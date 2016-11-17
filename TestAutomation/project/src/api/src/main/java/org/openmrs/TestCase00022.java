@@ -9,7 +9,7 @@
  */
 package org.openmrs;
 
-public class TestCase22 {
+public class TestCase00022 {
 	
 	public static void main(String args[]) {
 		VisitType testVT = new VisitType();
