@@ -1,4 +1,4 @@
-22
+00022
 MRS-22:
 VisitType.java
 setVisitTypeId(Integer visitTypeId), getVisitTypeID()
