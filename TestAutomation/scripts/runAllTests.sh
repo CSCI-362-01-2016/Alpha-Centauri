@@ -65,7 +65,7 @@ echo "<tr>" >> ../reports/htmlTemplate.html
 cd .. #go back to TestAutomation directory
 
 #pipes input into java driver classes and puts them in html table
-output=$(echo ${lineStorage[4]} | java -classpath ${lineStorage[6]} org.openmrs.${lineStorage[7]} "${lineStorage[4]}")
+output=$(echo ${lineStorage[4]} | java -classpath ${lineStorage[6]} ${lineStorage[7]} "${lineStorage[4]}")
 echo "<td>" >> reports/htmlTemplate.html
 echo $output >> reports/htmlTemplate.html
 echo "</td>" >> reports/htmlTemplate.html
