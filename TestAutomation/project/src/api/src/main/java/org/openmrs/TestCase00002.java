@@ -13,7 +13,7 @@ import java.util.Date;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 
-public class TestCase02 {
+public class TestCase00002 {
 	
 	public static void main(String args[]) {
 		Person TestPerson = new Person();
