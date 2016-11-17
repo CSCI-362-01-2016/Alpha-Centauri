@@ -1,4 +1,4 @@
-18
+00018
 MRS-18: The method shall return the patient's ID number.
 PatientIdentifierType.java
 setPatientIdentifierTypeId(Integer patientIdentifierTypeId), getPatientIdentifierTypeId()
