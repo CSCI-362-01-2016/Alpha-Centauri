@@ -9,7 +9,7 @@
  */
 package org.openmrs;
 
-public class TestCase16 {
+public class TestCase00016 {
 	
 	public static void main(String args[]) {
 		CareSetting testCS = new CareSetting();
