@@ -5,4 +5,4 @@ clear()
 
 No known allergies
 .:./project/src/api/target/classes:./project/src/api/target/classes/org/openmrs/Allergies.class:./project/src/api/target/classes/org/openmrs/Allergy.class
-TestCase10
+org.openmrs.TestCase10
