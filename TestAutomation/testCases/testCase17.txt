@@ -5,4 +5,4 @@ toString()
 13
 Patient#13
 .:./project/src/api/target/classes:./project/src/api/target/classes/org/openmrs/Patient.class:./project/src/lib/commons-logging-1.2.jar
-TestCase17
+org.openmrs.TestCase17
