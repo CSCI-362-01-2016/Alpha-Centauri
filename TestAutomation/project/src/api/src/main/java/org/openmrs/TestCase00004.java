@@ -13,7 +13,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class TestCase04 {
+public class TestCase00004 {
 	
 	public static void main(String args[]) {
 		FieldAnswer TestFA = new FieldAnswer();
