@@ -1,7 +1,7 @@
 05
 MRS-5: The form shall require the patient to enter an emergency contact. 
 Relationship.java
-setPersonB(Person personB) getPersonB()
+setPersonB(Person personB),getPersonB()
 
 true
 .:./project/src/api/target/classes:./project/src/api/target/classes/org/openmrs/Person.class:./project/src/api/target/classes/org/openmrs/Relationship.class:./project/src/lib/commons-logging-1.2.jar

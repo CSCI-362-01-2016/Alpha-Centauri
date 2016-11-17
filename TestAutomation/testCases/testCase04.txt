@@ -1,7 +1,7 @@
 04
 MRS-4: The form shall require the patient to enter a valid date. 
 FieldAnswer.java
-setDateCreated() getDateCreated()
+setDateCreated(),getDateCreated()
 10-27-2016
 10-27-2016
 .:./project/src/api/target/classes:./project/src/api/target/classes/org/openmrs/FieldAnswer.class
