@@ -9,7 +9,7 @@
  */
 package org.openmrs;
 
-public class TestCase06 {
+public class TestCase00006 {
 	
 	public static void main(String args[]) {
 		ProgramWorkflow testPW = new ProgramWorkflow();
