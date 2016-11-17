@@ -1,4 +1,4 @@
-12
+00012
 MRS-12: Gives the index of the allergy in the allergies list
 Allergies.java
 indexOf(Object o)
