@@ -5,4 +5,4 @@ indexOf(Object o)
 0
 0
 .:./project/src/api/target/classes:./project/src/api/target/classes/org/openmrs/Allergies.class:./project/src/api/target/classes/org/openmrs/Allergy.class
-TestCase12
+org.openmrs.TestCase12
