@@ -1,4 +1,4 @@
-20
+00020
 MRS-20:
 RelationshipType.java
 setWeight(Integer weight), getWeight()
