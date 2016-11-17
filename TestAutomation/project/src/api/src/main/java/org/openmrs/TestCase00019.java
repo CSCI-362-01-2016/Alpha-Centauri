@@ -9,7 +9,7 @@
  */
 package org.openmrs;
 
-public class TestCase19 {
+public class TestCase00019 {
 	
 	public static void main(String args[]) {
 		PatientIdentifierType testPIT = new PatientIdentifierType();
