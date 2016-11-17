@@ -5,4 +5,4 @@ setGivenName() getGivenName()
 Nick
 Nick
 .:./project/src/api/target/classes:./project/src/api/target/classes/org/openmrs/PersonName.class:./project/src/lib/commons-logging-1.2.jar:./project/src/lib/commons-io-1.4.jar
-TestCase01
+org.openmrs.TestCase01
