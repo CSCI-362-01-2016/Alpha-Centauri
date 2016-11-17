@@ -1,4 +1,4 @@
-08
+00008
 MRS-8: Tests that an allergy has been added
 Allergies.java
 add(Allergy allergy)
