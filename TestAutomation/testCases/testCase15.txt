@@ -1,8 +1,0 @@
-15
-MRS-15: The method shall return "" name and concept are both null.
-Drug.java
-getDisplayName()
-
-
-.:./project/src/api/target/classes:./project/src/api/target/classes/org/openmrs/Drug.class:./project/src/lib/commons-lang3-3.1.jar
-TestCase15

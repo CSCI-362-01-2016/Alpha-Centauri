@@ -1,8 +1,0 @@
-03
-MRS-3: The form shall require the patient to fill out a valid gender. 
-Person.java
-setGender(),getGender()
-Male
-Male
-.:./project/src/api/target/classes:./project/src/api/target/classes/org/openmrs/Person.class:./project/src/lib/commons-logging-1.2.jar
-TestCase03

@@ -1,0 +1,8 @@
+00013
+MRS-13: Will return false when the allergies list is not empty
+Allergies.java
+isEmpty()
+
+false
+.:./project/src/api/target/classes:./project/src/api/target/classes/org/openmrs/Allergies.class:./project/src/api/target/classes/org/openmrs/Allergy.class
+org.openmrs.TestCase13

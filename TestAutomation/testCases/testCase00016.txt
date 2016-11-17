@@ -1,0 +1,8 @@
+00016
+MRS-16: The care setting ID shall be updated to the ID entered.
+CareSetting.java
+setCareSettingId(Integer careSettingId), getCareSettingId()
+100
+100
+.:./project/src/api/target/classes:./project/src/api/target/classes/org/openmrs/CareSetting.class
+org.openmrs.TestCase16

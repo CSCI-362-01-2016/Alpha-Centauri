@@ -1,0 +1,8 @@
+00006
+MRS-6: The method shall return null.
+ProgramWorkflow.java
+getState(Integer programWorkflowStateID)
+-3
+null
+.:./project/src/api/target/classes:./project/src/api/target/classes/org/openmrs/ProgamWorkflow.class:./project/src/lib/commons-logging-1.2.jar
+org.openmrs.TestCase06

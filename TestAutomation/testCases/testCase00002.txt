@@ -1,0 +1,8 @@
+00002
+MRS-2: The form shall require the patient to enter a valid age.
+Person.java
+setBirthDate(),getBirthDate()
+04-11-1995
+04-11-1995
+.:./project/src/api/target/classes:./project/src/api/target/classes/org/openmrs/Person.class:./project/src/lib/commons-logging-1.2.jar
+org.openmrs.TestCase02

@@ -1,8 +1,0 @@
-20
-MRS-20:
-RelationshipType.java
-setWeight(Integer weight), getWeight()
-120
-120
-.:./project/src/api/target/classes:./project/src/api/target/classes/org/openmrs/RelationshipType.class
-TestCase20

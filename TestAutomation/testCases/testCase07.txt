@@ -1,8 +1,0 @@
-07
-MRS-7: The method shall return null.
-ProgramWorkflow.java
-getStateByName(String name)
-" "
-null
-.:./project/src/api/target/classes:./project/src/api/target/classes/org/openmrs/ProgamWorkflow.class:./project/src/lib/commons-logging-1.2.jar
-TestCase07

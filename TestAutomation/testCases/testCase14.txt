@@ -1,8 +1,0 @@
-14
-MRS-14: Will return True when the allergies list is empty
-Allergies.java
-isEmpty()
-
-true
-.:./project/src/api/target/classes:./project/src/api/target/classes/org/openmrs/Allergies.class:./project/src/api/target/classes/org/openmrs/Allergy.class
-TestCase14
