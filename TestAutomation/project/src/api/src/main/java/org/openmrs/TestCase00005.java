@@ -9,7 +9,7 @@
  */
 package org.openmrs;
 
-public class TestCase05 {
+public class TestCase00005 {
 	
 	public static void main(String args[]) {
 		Relationship testRelationship = new Relationship();
