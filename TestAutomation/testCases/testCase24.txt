@@ -5,4 +5,4 @@ getDisplayString()
 
 (null)
 .:./project/src/api/target/classes:./project/src/api/target/classes/org/openmrs/User.class:./project/src/lib/commons-logging-1.2.jar
-TestCase24
+org.openmrs.TestCase24
