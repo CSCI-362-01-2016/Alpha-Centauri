@@ -1,4 +1,4 @@
-06
+00006
 MRS-6: The method shall return null.
 ProgramWorkflow.java
 getState(Integer programWorkflowStateID)
