@@ -1,4 +1,4 @@
-10
+00010
 MRS-10: Clears the list of allergies
 Allergies.java
 clear()
