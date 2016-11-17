@@ -5,4 +5,4 @@ setID(Integer id) toString()
 13
 Visit #13
 .:./project/src/api/target/classes:./project/src/api/target/classes/org/openmrs/Visit.class
-TestCase23
+org.openmrs.TestCase23
