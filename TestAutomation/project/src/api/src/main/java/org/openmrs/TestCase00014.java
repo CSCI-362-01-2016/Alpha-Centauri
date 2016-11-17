@@ -9,7 +9,7 @@
  */
 package org.openmrs;
 
-public class TestCase14 {
+public class TestCase00014 {
 	
 	public static void main(String args[]) {
 		Allergies testAllergies = new Allergies();
