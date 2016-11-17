@@ -5,4 +5,4 @@ getDisplayName()
 
 
 .:./project/src/api/target/classes:./project/src/api/target/classes/org/openmrs/Drug.class:./project/src/lib/commons-lang3-3.1.jar
-TestCase15
+org.openmrs.TestCase15
