@@ -5,4 +5,4 @@ getStateByName(String name)
 " "
 null
 .:./project/src/api/target/classes:./project/src/api/target/classes/org/openmrs/ProgamWorkflow.class:./project/src/lib/commons-logging-1.2.jar
-TestCase07
+org.openmrs.TestCase07
