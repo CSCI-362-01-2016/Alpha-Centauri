@@ -12,7 +12,7 @@ package org.openmrs;
 import java.util.HashSet;
 import java.util.Set;
 
-public class TestCase11 {
+public class TestCase00011 {
 	
 	public static void main(String args[]) {
 		Allergies testAllergies = new Allergies();
