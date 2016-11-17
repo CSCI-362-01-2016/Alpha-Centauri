@@ -5,4 +5,4 @@ setPatientIdentifierTypeId(Integer patientIdentifierTypeId), getPatientIdentifie
 11113
 11113
 .:./project/src/api/target/classes:./project/src/api/target/classes/org/openmrs/PatientIdentifierType.class
-TestCase18
+org.openmrs.TestCase18
