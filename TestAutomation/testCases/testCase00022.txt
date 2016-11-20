@@ -1,5 +1,5 @@
 00022
-MRS-22:
+MRS-22: The method shall return the visit ID.
 VisitType.java
 setVisitTypeId(Integer visitTypeId),getVisitTypeID()
 13
