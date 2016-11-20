@@ -1,5 +1,5 @@
 00023
-MRS-23:
+MRS-23: The method shall return the visit number.  
 Visit.java
 setID(Integer id),toString()
 13
