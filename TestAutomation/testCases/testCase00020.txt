@@ -1,5 +1,5 @@
 00020
-MRS-20:
+MRS-20: The method shall return the weight.
 RelationshipType.java
 setWeight(Integer weight),getWeight()
 120
