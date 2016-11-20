@@ -4,5 +4,5 @@ Allergies.java
 indexOf(Object o)
 0
 0
-.:./project/src/api/target/classes:./project/src/api/target/classes/org/openmrs/Allergies.class:./project/src/api/target/classes/org/openmrs/Allergy.class
+.:./project/src/api/target/classes:./project/src/api/target/classes/org/openmrs/Allergies.class:./project/src/api/target/classes/org/openmrs/Allergy.class:./project/src/lib/hibernate-core-4.3.9.Final.jar
 org.openmrs.TestCase00012
