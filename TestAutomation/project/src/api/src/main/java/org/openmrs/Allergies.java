@@ -43,7 +43,9 @@ public class Allergies implements List<Allergy> {
 	public boolean add(Allergy allergy) {
 		throwExceptionIfHasDuplicateAllergen(allergy);
 		allergyStatus = SEE_LIST;
-		return allergies.add(allergy);
+                Allergy testAllergy = new Allergy();
+                return allergies.add(testAllergy);
+		//return allergies.add(allergy);
 	}
 	
 	public boolean remove(Allergy allergy) {
@@ -115,7 +117,9 @@ public class Allergies implements List<Allergy> {
 	 */
 	@Override
 	public boolean contains(Object o) {
-		return allergies.contains(o);
+		 //Object testObject = new Object();
+                 //return allergies.contains(testObject);
+		 return allergies.contains(o);
 	}
 	
 	/**
