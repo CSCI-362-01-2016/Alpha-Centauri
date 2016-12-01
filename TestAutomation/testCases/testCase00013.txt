@@ -1,5 +1,5 @@
 00013
-MRS-13: Will return false when the allergies list is not empty
+MRS-13: The method shall return false when the allergies list is not empty.
 Allergies.java
 isEmpty()
 
