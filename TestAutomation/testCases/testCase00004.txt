@@ -1,5 +1,5 @@
 00004
-MRS-4: The method shall return the date created.
+MRS-4: The method shall return the date created when given a date created.
 FieldAnswer.java
 setDateCreated(),getDateCreated()
 10-27-2016
