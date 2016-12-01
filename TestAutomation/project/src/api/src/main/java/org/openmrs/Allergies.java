@@ -43,9 +43,12 @@ public class Allergies implements List<Allergy> {
 	public boolean add(Allergy allergy) {
 		throwExceptionIfHasDuplicateAllergen(allergy);
 		allergyStatus = SEE_LIST;
-                Allergy testAllergy = new Allergy();
-                return allergies.add(testAllergy);
-		//return allergies.add(allergy);
+                //the next two lines are what we added to break the cod
+                //Allergy testAllergy = new Allergy();
+                //return allergies.add(testAllergy);
+                
+                //this is the original return statement
+		return allergies.add(allergy);
 	}
 	
 	public boolean remove(Allergy allergy) {
