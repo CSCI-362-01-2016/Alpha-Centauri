@@ -1,5 +1,5 @@
 00001
-MRS-1: The method shall return the patient's name.
+MRS-1: The method shall return the patient's name when given a string.
 PersonName.java
 setGivenName(),getGivenName()
 Nick
