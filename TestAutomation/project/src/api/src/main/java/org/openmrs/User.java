@@ -320,9 +320,9 @@ public class User extends BaseOpenmrsMetadata implements java.io.Serializable, A
 	 * @see org.openmrs.Attributable#serialize()
 	 */
 	public String serialize() {
-                //this is the original line of code
+                //the following line is the original line of code, comment it to inject a fault
                 if (getUserId() != null) {
-                //this is what we changed to break the code    
+                //the following line is what we changed to break the code, uncomment it to inject a fault   
                 //if (getUserId() == null) {
 			return "" + getUserId();
 		} else {
