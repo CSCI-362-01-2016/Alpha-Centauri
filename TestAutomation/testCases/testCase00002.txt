@@ -1,5 +1,5 @@
 00002
-MRS-2: The method shall return the patient's birth date. 
+MRS-2: The method shall return the patient's birth date when given a birth date. 
 Person.java
 setBirthDate(),getBirthDate()
 04-11-1995
