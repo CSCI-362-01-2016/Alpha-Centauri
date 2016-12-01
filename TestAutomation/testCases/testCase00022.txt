@@ -1,8 +1,8 @@
 00022
-MRS-22: The method shall return the visit ID.
+MRS-22: The method shall return the visit ID when given a visit ID.
 VisitType.java
 setVisitTypeId(Integer visitTypeId),getVisitTypeID()
-13
-13
+25
+25
 .:./project/src/api/target/classes:./project/src/api/target/classes/org/openmrs/VisitType.class
 org.openmrs.TestCase00022
