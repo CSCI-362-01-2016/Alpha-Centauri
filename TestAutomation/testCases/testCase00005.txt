@@ -1,5 +1,5 @@
 00005
-MRS-5: The method shall return true. 
+MRS-5: The method shall return true when the patient has a person b. 
 Relationship.java
 setPersonB(Person personB),getPersonB()
 
