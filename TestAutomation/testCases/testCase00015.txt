@@ -1,5 +1,5 @@
 000015
-MRS-15: The method shall return "" name and concept are both null.
+MRS-15: The method shall return "" when name and concept are both null.
 Drug.java
 getDisplayName()
 
