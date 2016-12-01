@@ -1,5 +1,5 @@
 00021
-MRS-21: The method shall return true.
+MRS-21: The method shall return true when the person is dead.
 Person.java
 setDead(Boolean dead),getDead()
 true
