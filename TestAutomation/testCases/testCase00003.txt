@@ -1,5 +1,5 @@
 00003
-MRS-3: The form shall require the patient to fill out a valid gender. 
+MRS-3: The method shall return the gender.
 Person.java
 setGender(),getGender()
 Male
