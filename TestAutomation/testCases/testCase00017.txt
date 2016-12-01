@@ -1,5 +1,5 @@
 00017
-MRS-17: Given no input
+MRS-17: The method shall return the patient ID number when given an ID.
 Patient.java
 toString()
 13
