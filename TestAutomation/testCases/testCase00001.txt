@@ -1,5 +1,5 @@
 00001
-MRS-1: The form shall require the patient to have a name. 
+MRS-1: The method shall return the patient's name.
 PersonName.java
 setGivenName(),getGivenName()
 Nick
