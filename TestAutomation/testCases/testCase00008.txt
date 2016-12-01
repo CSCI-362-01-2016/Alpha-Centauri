@@ -1,5 +1,5 @@
 00008
-MRS-8: Tests that an allergy has been added
+MRS-8: The method shall return true if an allergy has been added.  
 Allergies.java
 add(Allergy allergy)
 

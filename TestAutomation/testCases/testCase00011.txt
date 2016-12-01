@@ -1,5 +1,5 @@
 00011
-MRS-11: Checks to see if the allergies list contains the specified object
+MRS-11: The method shall check to see if the allergies list contains the specified object and return true.
 Allergies.java
 contains(Object o)
 POLLEN

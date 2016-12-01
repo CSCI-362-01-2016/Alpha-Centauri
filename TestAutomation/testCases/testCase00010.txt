@@ -1,5 +1,5 @@
 00010
-MRS-10: Clears the list of allergies
+MRS-10: The method shall clear the list of allergies.
 Allergies.java
 clear()
 

@@ -1,5 +1,5 @@
 00009
-MRS-9: Removes an allergy from the end of the list
+MRS-9: The method shall return true if the allergy has been removed from the end of the list.
 Allergies.java
 remove(int index)
  

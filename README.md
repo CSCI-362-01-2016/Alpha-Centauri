@@ -1,13 +1,14 @@
 #Alpha-Centauri
 
-Requirements to Run the Test Automation
-1. Linux OS
-2. Apache Maven
-3. Eclipse IDE
-4. OpenMRS source code files
+<b>Requirements to Run the Test Automation</b>
+<ol><li>Linux OS</li>
+<li>Apache Maven</li>
+<li>Eclipse IDE</li>
+<li>This Repository (which containts the necessary OpenMRS source code files)</li></ol>
 
-How to Run the Test Automation
-Once you have the above requirements and have cloned the repository, simply open your terminal and change theo currnet working directory to the TestAutomation directory.  From there you can run the following command:
+<b>How to Run the Test Automation</b><br>
+
+Once you have the above requirements and have cloned the repository, simply open your terminal and change your current working directory (by using the "cd" command) to the TestAutomation directory.  From there you can run the following command:
 
 ./scripts/runAllTests.sh
 
