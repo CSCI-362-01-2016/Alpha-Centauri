@@ -1,8 +1,8 @@
 00023
-MRS-23: The method shall return the visit number.  
+MRS-23: The method shall return the visit number when given an ID.  
 Visit.java
 setID(Integer id),toString()
-13
-Visit #13
+213
+Visit #213
 .:./project/src/api/target/classes:./project/src/api/target/classes/org/openmrs/Visit.class
 org.openmrs.TestCase00023
