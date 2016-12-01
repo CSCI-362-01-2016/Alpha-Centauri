@@ -93,4 +93,5 @@ cd testCases
 done
 
 cd ../reports #goes to report dir
+open testReport.html
 xdg-open testReport.html #opens the html file

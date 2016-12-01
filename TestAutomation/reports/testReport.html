@@ -19,7 +19,7 @@
 00001
 </td>
 <td>
-MRS-1: The form shall require the patient to have a name.
+MRS-1: The method shall return the patient's name.
 </td>
 <td>
 PersonName.java
@@ -48,7 +48,7 @@ style="color:#0D7010;">Passed
 00002
 </td>
 <td>
-MRS-2: The form shall require the patient to enter a valid age.
+MRS-2: The method shall return the patient's birth date.
 </td>
 <td>
 Person.java
@@ -77,7 +77,7 @@ style="color:#0D7010;">Passed
 00003
 </td>
 <td>
-MRS-3: The form shall require the patient to fill out a valid gender.
+MRS-3: The method shall return the gender.
 </td>
 <td>
 Person.java
@@ -106,7 +106,7 @@ style="color:#0D7010;">Passed
 00004
 </td>
 <td>
-MRS-4: The form shall require the patient to enter a valid date.
+MRS-4: The method shall return the date created.
 </td>
 <td>
 FieldAnswer.java
@@ -135,7 +135,7 @@ style="color:#0D7010;">Passed
 00005
 </td>
 <td>
-MRS-5: The form shall require the patient to enter an emergency contact.
+MRS-5: The method shall return true when the patient has a person b.
 </td>
 <td>
 Relationship.java
@@ -164,7 +164,7 @@ style="color:#0D7010;">Passed
 00006
 </td>
 <td>
-MRS-6: The method shall return null.
+MRS-6: The method shall return null when the ID is not a positive number.
 </td>
 <td>
 ProgramWorkflow.java
@@ -193,7 +193,7 @@ style="color:#0D7010;">Passed
 00007
 </td>
 <td>
-MRS-7: The method shall return null.
+MRS-7: The method shall return null when the name is empty.
 </td>
 <td>
 ProgramWorkflow.java
@@ -222,7 +222,7 @@ style="color:#0D7010;">Passed
 00008
 </td>
 <td>
-MRS-8: Tests that an allergy has been added
+MRS-8: The method shall return true if an allergy has been added.
 </td>
 <td>
 Allergies.java
@@ -251,7 +251,7 @@ style="color:#0D7010;">Passed
 00009
 </td>
 <td>
-MRS-9: Removes an allergy from the end of the list
+MRS-9: The method shall return true if the allergy has been removed from the end of the list.
 </td>
 <td>
 Allergies.java
@@ -280,7 +280,7 @@ style="color:#0D7010;">Passed
 00010
 </td>
 <td>
-MRS-10: Clears the list of allergies
+MRS-10: The method shall clear the list of allergies.
 </td>
 <td>
 Allergies.java
@@ -309,7 +309,7 @@ style="color:#0D7010;">Passed
 00011
 </td>
 <td>
-MRS-11: Checks to see if the allergies list contains the specified object
+MRS-11: The method shall check to see if the allergies list contains the specified object and return true.
 </td>
 <td>
 Allergies.java
@@ -338,7 +338,7 @@ style="color:#0D7010;">Passed
 00012
 </td>
 <td>
-MRS-12: Gives the index of the allergy in the allergies list
+MRS-12: The method shall give the index of the allergy in the allergies list and return it.
 </td>
 <td>
 Allergies.java
@@ -367,7 +367,7 @@ style="color:#0D7010;">Passed
 00013
 </td>
 <td>
-MRS-13: Will return false when the allergies list is not empty
+MRS-13: The method shall return false when the allergies list is not empty.
 </td>
 <td>
 Allergies.java
@@ -396,7 +396,7 @@ style="color:#0D7010;">Passed
 00014
 </td>
 <td>
-MRS-14: Will return True when the allergies list is empty
+MRS-14: The method shall return true when the allergies list is empty.
 </td>
 <td>
 Allergies.java
@@ -425,7 +425,7 @@ style="color:#0D7010;">Passed
 000015
 </td>
 <td>
-MRS-15: The method shall return "" name and concept are both null.
+MRS-15: The method shall return "" when name and concept are both null.
 </td>
 <td>
 Drug.java
@@ -454,7 +454,7 @@ style="color:#0D7010;">Passed
 00016
 </td>
 <td>
-MRS-16: The care setting ID shall be updated to the ID entered.
+MRS-16: The method shall update the care setting ID to the ID entered and return the care setting ID.
 </td>
 <td>
 CareSetting.java
@@ -483,7 +483,7 @@ style="color:#0D7010;">Passed
 00017
 </td>
 <td>
-MRS-17: Given no input
+MRS-17: The method shall return the patient ID number when given an ID.
 </td>
 <td>
 Patient.java
@@ -512,7 +512,7 @@ style="color:#0D7010;">Passed
 00018
 </td>
 <td>
-MRS-18: The method shall return the patient's ID number.
+MRS-18: The method shall return the patient's ID number when given an ID number.
 </td>
 <td>
 PatientIdentifierType.java
@@ -570,7 +570,7 @@ style="color:#0D7010;">Passed
 00020
 </td>
 <td>
-MRS-20: The method shall return the weight.
+MRS-20: The method shall return the weight when given a weight.
 </td>
 <td>
 RelationshipType.java
@@ -599,7 +599,7 @@ style="color:#0D7010;">Passed
 00021
 </td>
 <td>
-MRS-21: The method shall return true.
+MRS-21: The method shall return true when the person is dead.
 </td>
 <td>
 Person.java
@@ -628,7 +628,7 @@ style="color:#0D7010;">Passed
 00022
 </td>
 <td>
-MRS-22: The method shall return the visit ID.
+MRS-22: The method shall return the visit ID when given a visit ID.
 </td>
 <td>
 VisitType.java
@@ -637,16 +637,16 @@ VisitType.java
 setVisitTypeId(Integer visitTypeId)
 </td>
 <td>
-13
+25
 </td>
 </td>
 </td>
 </td>
 <td>
-13
+25
 </td>
 <td>
-13
+25
 </td>
 <td
 style="color:#0D7010;">Passed
