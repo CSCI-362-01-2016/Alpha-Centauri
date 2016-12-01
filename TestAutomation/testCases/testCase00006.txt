@@ -1,5 +1,5 @@
 00006
-MRS-6: The method shall return null.
+MRS-6: The method shall return null when the ID is not a positive number.
 ProgramWorkflow.java
 getState(Integer programWorkflowStateID)
 -3
