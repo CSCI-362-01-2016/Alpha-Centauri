@@ -1,5 +1,5 @@
 00003
-MRS-3: The method shall return the gender.
+MRS-3: The method shall return the gender when given a gender.
 Person.java
 setGender(),getGender()
 Male
