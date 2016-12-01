@@ -1,5 +1,5 @@
 00024
-MRS-24: The method shall return () if getPersonName() is null.
+MRS-24: The method shall return (null) when getPersonName() is null.
 User.java
 getDisplayString()
 
